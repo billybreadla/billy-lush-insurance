@@ -1,0 +1,7 @@
+# Turbopack has broken native bindings on this Mac — pin to the webpack build
+# (same setup as the billy-bread site, which deploys cleanly).
+[build]
+  command = "next build --webpack"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
