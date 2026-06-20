@@ -158,6 +158,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "how-much-life-insurance-do-i-need",
+    question: "How much life insurance do I actually need?",
+    dek: "A plain-talk guide from a California and Texas life insurance agent on how to figure out the right amount of life insurance for your family.",
+    updated: "2026-06-20",
+    answer: "The right amount of life insurance depends on what you want it to do: replace income, pay off debts, cover final expenses, or some combination of all three. A common starting point is ten to twelve times your annual income, but that number shifts based on your mortgage, dependents, debts, and whether a spouse earns income too. There is no single magic number, and honestly, some people need far less than they think. The goal is to pick an amount that solves a real problem for the people you would leave behind.",
+    sections: [
+      { h: "Start with the problem you are trying to solve", p: ["Before anyone talks numbers, I always ask one question first: what would actually go wrong financially if you died tomorrow? For a parent with young kids and a mortgage, the answer is usually income replacement. For a retiree with no debt and grown children, it might just be covering final expenses and leaving a small gift. Those are very different problems, and they need very different amounts of insurance.", "Once you know the problem, you can size the solution. If your family needs your income for fifteen more years, multiply your salary by something close to that number and adjust down for savings you already have, any Social Security survivor benefits, or a spouse's income. If you mostly want to keep the house, look at your mortgage payoff balance. Working from a real goal beats picking a round number out of thin air."] },
+      { h: "The DIME method is a useful, if imperfect, checklist", p: ["A lot of agents use something called the DIME formula: Debts, Income replacement, Mortgage, and Education costs for your kids. You add those up and you have a rough ceiling. I like it as a starting checklist because it forces you to think about each category separately instead of guessing. The weakness is that it can push you toward more coverage than you need if you are not careful to subtract the assets you already have.", "For example, if you have a solid emergency fund, a paid-off car, and a 401k your spouse could tap, those things reduce the gap your life insurance needs to fill. I have talked to plenty of people in the Conejo Valley who already had enough savings to cover several of the DIME categories and really only needed a modest policy to handle the mortgage and a few years of living expenses. Knowing what you already have is just as important as knowing what you owe."] },
+      { h: "When less is more, and when people underestimate", p: ["Not everyone needs a large policy. Single adults with no dependents and no co-signed debts often need very little, maybe just enough to cover burial costs and any remaining student loans. Retirees who have already paid off their home and built up savings sometimes find that a small final expense policy is all that makes sense. I will always tell you when I think a smaller policy fits better, because overselling someone protection they do not need is not something I am willing to do.", "On the other side, young parents tend to underestimate their needs significantly. Child care, a stay-at-home spouse's economic contribution, and future tuition costs add up faster than people expect. A fifteen-minute conversation about your actual monthly budget and your family's plans usually surfaces numbers that a quick online calculator misses. If you are not sure where you land, that conversation costs you nothing and it tends to clear things up quickly."] },
+    ],
+    related: [
+      { href: "/learn/how-much-does-life-insurance-cost", label: "How much does life insurance cost?" },
+      { href: "/learn/term-life-vs-whole-life-insurance", label: "Term life vs. whole life: which one do you need?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
