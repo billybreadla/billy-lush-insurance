@@ -1,0 +1,41 @@
+name: Weekly Learn article
+
+# Writes one new /learn article each week in Billy's voice and pushes it to main.
+# Netlify auto-deploys main to billylushinsurance.com. Needs repo secret
+# ANTHROPIC_API_KEY. Run manually anytime from the Actions tab ("Run workflow").
+
+on:
+  schedule:
+    # Tuesdays 16:00 UTC = 9:00 AM Pacific (PDT). (In winter PST it runs at 8am.)
+    - cron: "0 16 * * 2"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  write-article:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate the article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node .github/scripts/generate-article.mjs
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet -- app/lib/articles.ts; then
+            echo "No new article this run; nothing to commit."
+            exit 0
+          fi
+          git config user.name "billy-lush-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add app/lib/articles.ts
+          git commit -m "Add weekly Learn article (automated)"
+          git push
