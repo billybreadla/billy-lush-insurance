@@ -175,6 +175,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "do-i-need-a-medical-exam-for-life-insurance",
+    question: "Do I need a medical exam to get life insurance?",
+    dek: "Learn when a medical exam is required for life insurance, when you can skip it, and how to decide which path makes sense for your situation.",
+    updated: "2026-06-20",
+    answer: "No, you do not always need a medical exam to get life insurance. Many policies today are issued through a process called accelerated or simplified underwriting, which uses data and health questions instead of a paramedical exam. That said, fully underwritten policies that do require an exam often come with lower premiums and higher coverage amounts, so skipping the exam is not always the better deal. The right answer depends on your age, health, how much coverage you need, and how quickly you need it in force.",
+    sections: [
+      { h: "Two main paths: exam required vs. no-exam", p: ["When you apply for life insurance, the insurance company needs to figure out how much risk they are taking on by covering you. The traditional way to do that is a fully underwritten application, which includes a paramedical exam. A technician comes to your home or office, usually at no cost to you, and checks your blood pressure, height, weight, and draws a small blood and urine sample. The whole thing takes about 30 minutes. The insurer then reviews those results alongside your medical records and driving history before making a decision. This process can take several weeks, but it usually unlocks the best available rates and the highest coverage amounts, often into the millions of dollars.", "The no-exam path has grown a lot in recent years. Simplified issue policies ask you a short list of health questions but skip the bloodwork. Accelerated underwriting uses third-party data sources, like prescription history and motor vehicle records, to make a decision quickly, sometimes within minutes or hours. These policies can be a great fit if you are in reasonably good health and want coverage in place fast. Final expense insurance, which is a smaller whole-life policy aimed at covering end-of-life costs, often has very lenient underwriting and is designed for older adults or people with health conditions who might not qualify elsewhere."] },
+      { h: "When skipping the exam makes sense, and when it does not", p: ["No-exam coverage is often a good fit if you are younger and in good health and just want a straightforward term policy without the waiting period. It can also make sense if you have a specific time crunch, like a lender requiring you to show proof of coverage quickly. And if you have a health history that might complicate a full exam, some simplified-issue or guaranteed-issue products are specifically designed to give you options.", "On the other hand, if you are looking for a large death benefit, say $500,000 or more, many insurers will still require a full exam before they will offer you their best rates. Taking the exam when you are healthy is usually worth it because the savings over a 20 or 30 year term can be significant. I always tell people: do not assume the no-exam route is the easier or cheaper route. Sometimes it is, and sometimes a 30-minute appointment saves you a meaningful amount of money every single month for decades."] },
+      { h: "A few things worth knowing before you decide", p: ["Your age plays a big role here. Carriers generally have more appetite for no-exam policies on younger applicants, sometimes up to age 60, but the cutoffs and rules vary. California and Texas both have a healthy market for no-exam products, so you usually have real choices no matter which state you are in.", "The best move is to compare both options side by side. Get a quote assuming you would take the exam, and get a quote for an accelerated or simplified product, and look at both the cost and the coverage amount. If the numbers are close, skipping the exam is convenient. If there is a big gap, the exam is probably worth your afternoon. I am happy to walk through that comparison with anyone who reaches out, no pressure either way."] },
+    ],
+    related: [
+      { href: "/learn/how-much-does-life-insurance-cost", label: "How much does life insurance cost?" },
+      { href: "/learn/what-is-final-expense-insurance", label: "What is final expense insurance, and is it worth it?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
