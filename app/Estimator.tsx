@@ -93,7 +93,7 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
       <div className="est-out">
         <div className="est-figure">
           <span className="est-range">
-            {fmt(low)}&ndash;{fmt(high)}
+            {fmt(low)} to {fmt(high)}
           </span>
           <span className="est-per">/ month, roughly</span>
         </div>
