@@ -192,6 +192,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "life-insurance-with-a-pre-existing-condition",
+    question: "Can I get life insurance with a pre-existing health condition?",
+    dek: "A pre-existing health condition does not automatically disqualify you from life insurance, though it may affect your options and cost.",
+    updated: "2026-06-23",
+    answer: "Yes, you can usually get life insurance with a pre-existing health condition. The condition, how well it is managed, and how long ago it was diagnosed all factor into what a carrier will offer you. Some people qualify for standard or even preferred coverage, while others do better with products designed for higher-risk applicants. The short version: do not assume you are uninsurable until you have actually looked.",
+    sections: [
+      { h: "What counts as a pre-existing condition, and why does it matter?", p: ["Insurers broadly define a pre-existing condition as any health issue that existed before you applied, whether that is Type 2 diabetes, heart disease, high blood pressure, a history of cancer, sleep apnea, or dozens of other diagnoses. During underwriting, the carrier is trying to estimate risk. A condition that is well-controlled with medication and has been stable for several years looks very different to an underwriter than the same condition that is newly diagnosed or poorly managed.", "That does not mean a rough health history closes every door. It usually means the carrier adjusts the price, puts a temporary rating on your policy, or in some cases excludes a specific cause of death. Each company weighs conditions differently, which is one reason working with an independent agent matters. I can shop your situation across multiple carriers instead of being locked into one company's guidelines."] },
+      { h: "What types of policies are available if standard underwriting turns you down?", p: ["If a fully underwritten term or whole life policy is not accessible right now, there are other options worth knowing about. Simplified issue policies skip the medical exam and ask only a short health questionnaire. Guaranteed issue policies ask no health questions at all and approve virtually everyone within a certain age range, usually 45 to 85. Final expense insurance is a common example of a guaranteed or simplified issue product, and it is specifically designed to cover end-of-life costs when other coverage is hard to get.", "The trade-off with these products is real: the death benefit is smaller (often in the range of a few thousand to around twenty-five thousand dollars), the premiums are higher per dollar of coverage, and most include a graded benefit period, usually two years, during which a non-accidental death pays back premiums plus interest rather than the full face amount. For someone whose options are limited, that coverage can still mean a great deal to their family."] },
+      { h: "Practical steps if you have a health condition and want coverage", p: ["First, gather your records. Knowing your diagnosis date, current medications, A1C or other relevant numbers, and the name of your treating physician helps underwriting move faster and can actually work in your favor if your condition is well-managed. A controlled A1C or a clean post-treatment scan tells a better story than silence.", "Second, be honest on your application. Misrepresenting your health is called material misrepresentation, and it can give a carrier grounds to deny a claim when your family needs that money most. I have seen what happens to families in probate when assets get tied up because paperwork was not handled correctly. A denied life insurance claim is a different kind of heartbreak, and it is avoidable. Tell the truth, let me find the carrier whose underwriting fits your situation, and you will be in a much better position."] },
+    ],
+    related: [
+      { href: "/learn/what-is-final-expense-insurance", label: "What is final expense insurance, and is it worth it?" },
+      { href: "/learn/do-i-need-a-medical-exam-for-life-insurance", label: "Do I need a medical exam to get life insurance?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
