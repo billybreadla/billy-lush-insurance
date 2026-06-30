@@ -209,6 +209,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "is-life-insurance-through-work-enough",
+    question: "Is the life insurance from my job enough?",
+    dek: "Group life insurance through work is a great starting point, but for most people with dependents it is not enough coverage on its own.",
+    updated: "2026-06-30",
+    answer: "For most people with a family to support, the life insurance offered through your job is not enough on its own. Group coverage is usually capped at one to two times your annual salary, and financial planners generally suggest having closer to ten to twelve times your income in coverage. The bigger issue is that you do not own that policy, your employer does, and if you leave the job or get laid off, the coverage usually disappears with it.",
+    sections: [
+      { h: "What group life insurance at work actually gives you", p: ["Most employers who offer life insurance give you what is called group term coverage. The benefit is often one times your annual salary, sometimes two times if you are lucky, and some employers let you buy supplemental coverage on top of that. The premium is either free or very low, which makes it feel like a solid deal, and it is, as far as it goes. You usually do not need a medical exam to enroll, which is genuinely valuable if you have health issues.", "The catch is that the benefit amount is tied to your salary, not to what your family would actually need to replace your income, pay off a mortgage, cover childcare, or keep the kids in school. A salary of sixty thousand dollars a year sounds like a lot of life insurance until you run the real numbers on what your household would need over ten or twenty years."] },
+      { h: "The portability problem nobody talks about until it is too late", p: ["Here is the thing that worries me most about relying entirely on work coverage. You do not own that policy. Your employer does. If you get laid off, change jobs, retire early, or your company goes through a restructuring, that coverage can end immediately. Some plans offer a conversion option, meaning you can convert to an individual policy without proving insurability, but the converted policy is often expensive and the window to act is short, usually around thirty days.", "I have seen this play out in hard ways. Someone loses a job in their fifties, maybe after a health scare, and suddenly they are trying to get individual coverage when they are older and their health has changed. Buying your own term policy while you are young and healthy locks in your rate and your coverage no matter what happens with your employer."] },
+      { h: "So what should you actually do?", p: ["Think of the group coverage at work as a bonus layer, not the foundation. If you have a spouse, kids, a mortgage, or anyone who depends on your income, it makes sense to have your own individual policy underneath it. Term life insurance is usually the most affordable way to build that foundation, and rates are often lower than people expect, especially if you are in your twenties, thirties, or early forties and reasonably healthy.", "A good starting exercise is to add up your mortgage balance, the years of income your family would need to replace, any debts, and future costs like college. Compare that number to what your employer provides. The gap is what you need to fill. If you want help thinking through that math, I am happy to walk through it with you. No pressure, just a conversation."] },
+    ],
+    related: [
+      { href: "/learn/how-much-life-insurance-do-i-need", label: "How much life insurance do I actually need?" },
+      { href: "/learn/how-much-does-life-insurance-cost", label: "How much does life insurance cost?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
