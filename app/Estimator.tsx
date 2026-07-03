@@ -101,9 +101,12 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
           Illustrative range for a healthy non-smoker on a 20-year term policy. Your real number
           depends on your health and the term you choose, that&rsquo;s the 15 minutes.
         </p>
-        <a className="btn btn-primary est-cta" href={phoneHref}>
+        <a className="btn btn-primary est-cta" href="#quote">
           Get my actual number
         </a>
+        <p className="est-alt">
+          or skip the form and <a href={phoneHref}>call me directly</a>
+        </p>
       </div>
     </div>
   );

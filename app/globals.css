@@ -340,6 +340,43 @@ footer .wrap { padding: 56px 24px 40px; }
 }
 .booking-frame iframe { width: 100%; min-height: 620px; border: 0; display: block; }
 
+/* ——— quote form (lead capture → Netlify Forms) ——— */
+.qf {
+  max-width: 760px; margin: 44px auto 0; padding: 36px 36px 32px; text-align: left;
+  background: var(--paper-deep); border: 1px solid var(--line); border-radius: 16px;
+  scroll-margin-top: 90px;
+}
+.qf-nectar { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.qf-head h3 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin: 12px 0 10px; }
+.qf-sub { color: var(--ink-soft); max-width: 36em; }
+.qf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; margin-top: 26px; }
+.qf-field { display: flex; flex-direction: column; gap: 8px; }
+.qf-field-wide { grid-column: 1 / -1; }
+.qf-field label {
+  font-family: var(--font-mono), monospace; font-size: 0.7rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--ink-soft);
+}
+.qf-field input, .qf-field select, .qf-field textarea {
+  font-family: var(--font-body), Georgia, serif; font-size: 1rem; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 14px; width: 100%;
+}
+.qf-field textarea { resize: vertical; }
+.qf-field input:focus, .qf-field select:focus, .qf-field textarea:focus {
+  outline: 2px solid var(--acorn); outline-offset: 1px; border-color: var(--acorn);
+}
+.qf-field ::placeholder { color: var(--ink-soft); opacity: 0.55; }
+.qf-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 26px; }
+.qf-actions .btn { border: 1px solid var(--ink); cursor: pointer; font-size: 1rem; }
+.qf-actions .btn[disabled] { opacity: 0.6; cursor: default; }
+.qf-fine { font-family: var(--font-mono), monospace; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+.qf-error { margin-top: 16px; color: #8a2b2b; }
+.qf-done { text-align: center; padding: 48px 36px; }
+.qf-done h3 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin: 12px 0 10px; }
+.qf-done p { color: var(--ink-soft); max-width: 32em; margin: 0 auto; }
+.est-alt { margin-top: 14px; font-size: 0.88rem; color: var(--ink-soft); text-align: center; }
+.est-alt a { text-decoration-color: var(--gold); text-underline-offset: 2px; }
+
 /* ——— mobile ——— */
 @media (max-width: 860px) {
   .hero-grid, .story-grid, .local-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -356,6 +393,8 @@ footer .wrap { padding: 56px 24px 40px; }
   .friday-photo { min-height: 220px; order: -1; }
   .oakprog { right: 12px; bottom: 14px; }
   .oakprog-track { height: 60px; }
+  .qf { padding: 26px 20px; }
+  .qf-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

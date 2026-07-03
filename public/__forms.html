@@ -1,0 +1,20 @@
+<!doctype html>
+<!-- Netlify Forms detection file. The real form is a React component
+     (app/components/QuoteForm.tsx) rendered through the Next runtime,
+     which Netlify's build-time form scanner can't see; this static
+     copy declares the form and its fields so submissions are accepted.
+     Field names here MUST match QuoteForm.tsx. -->
+<html lang="en">
+  <head><meta charset="utf-8" /><title>quote-request form definition</title></head>
+  <body>
+    <form name="quote-request" data-netlify="true" netlify-honeypot="orchard" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="interest"></select>
+      <select name="besttime"></select>
+      <textarea name="note"></textarea>
+      <input type="text" name="orchard" />
+    </form>
+  </body>
+</html>

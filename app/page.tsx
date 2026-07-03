@@ -1,5 +1,6 @@
 import Estimator from "./Estimator";
 import Reveal from "./Reveal";
+import QuoteForm from "./components/QuoteForm";
 import { AcornMark, SiteHeader, SiteFooter } from "./components/Chrome";
 import {
   SITE_URL,
@@ -386,6 +387,8 @@ export default function Home() {
                 </div>
               </div>
             )}
+
+            <QuoteForm phone={FACTS.phone} phoneHref={FACTS.phoneHref} />
 
             <p className="cta-fine">Evenings &amp; weekends welcome. I&rsquo;m a baker, I&rsquo;m up anyway.</p>
           </div>
