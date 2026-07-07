@@ -226,6 +226,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "who-should-i-name-as-beneficiary",
+    question: "Who should I name as my life insurance beneficiary?",
+    dek: "Choosing the right life insurance beneficiary is one of the most important decisions you will make, and a few simple rules can save your family a lot of heartache.",
+    updated: "2026-07-07",
+    answer: "Name a specific person, or persons, rather than leaving the beneficiary field blank or writing 'my estate.' A named beneficiary lets the insurance company pay your family directly, usually within weeks, without going through probate court. For most people, a spouse or domestic partner comes first, with adult children or a trust named as contingent (backup) beneficiaries. The details depend on your family situation, but getting this right costs nothing extra and matters enormously.",
+    sections: [
+      { h: "The basics: primary and contingent beneficiaries", p: ["Your primary beneficiary is the person, or people, who receive the death benefit when you die. You can name more than one and split the percentage any way you like, as long as the shares add up to 100 percent. Your contingent beneficiary gets the money only if your primary beneficiary has already passed away or cannot be located. Think of the contingent as a backup, and always name one. Skipping that field is one of the most common mistakes I see.", "Most people start with a spouse or partner as primary and adult children as contingent. If you have young children, you usually do not want to name them directly because minors cannot legally receive a large lump sum on their own. A court will often appoint a guardian to manage the funds until they come of age, which is exactly the kind of delay and cost you were trying to avoid. A better option is to name a trusted adult to receive the money on the children's behalf, or to work with an estate planning attorney about setting up a trust."] },
+      { h: "Common situations and a few things to watch out for", p: ["Married couples in California should know that community property rules can affect how life insurance interacts with a spouse's rights, even if someone else is named beneficiary. In Texas, similar community property considerations apply. These situations are not deal-breakers, but they are worth a conversation with an estate planning attorney, especially if you are in a blended family, going through a divorce, or have a beneficiary who receives government benefits like Medicaid or SSI. Leaving money directly to someone on those programs can sometimes disrupt their eligibility.", "My wife works in probate real estate, so I have watched firsthand what happens when paperwork is not in order. When a beneficiary is properly named on a life insurance policy, the money skips probate entirely and goes straight to your family. When the beneficiary field says 'my estate' or is left blank, that same money gets pulled into the court process, which can take months or longer and costs the estate real money in fees. Naming a real person costs you nothing and saves your family an enormous amount of stress."] },
+      { h: "Keep your beneficiary designation up to date", p: ["A beneficiary form you filled out ten years ago is still legally binding today, even if your life has changed completely. Divorce, remarriage, the birth of a child, or the death of a previously named beneficiary are all reasons to review and update your designation. I tell people to pull out their policy every time something big changes in their family and confirm the names still make sense.", "Updating a beneficiary is usually a simple form with your insurance company. It does not require a new medical exam or a new policy. It takes about ten minutes. If you are not sure who you named, call your insurance company or reach out to me and I can help you track it down. Getting this right is honestly more important than which policy you bought in the first place."] },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/how-much-life-insurance-do-i-need", label: "How much life insurance do I actually need?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
