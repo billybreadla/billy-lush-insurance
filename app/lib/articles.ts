@@ -243,6 +243,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "what-is-a-contingent-beneficiary",
+    question: "What is a contingent beneficiary, and why does it matter?",
+    dek: "A contingent beneficiary is your backup plan for the life insurance death benefit, and skipping that field on the form is a mistake that can send money straight into probate.",
+    updated: "2026-07-14",
+    answer: "A contingent beneficiary is the person (or entity) who receives your life insurance death benefit if your primary beneficiary dies before you or cannot be located. Think of it as a backup in line. Without one, the payout often has nowhere to go except your estate, which means it can get tangled up in probate court instead of going directly and quickly to the people you intended to protect.",
+    sections: [
+      { h: "Primary vs. contingent: what the terms actually mean", p: ["When you fill out a life insurance application, you name at least one primary beneficiary. That is the first person in line to receive the death benefit. The contingent beneficiary, sometimes called a secondary beneficiary, only comes into play if the primary beneficiary is no longer alive, formally disclaims the money, or cannot be found when a claim is filed. If your primary beneficiary is living and reachable, the contingent beneficiary never enters the picture at all.", "You can name more than one person at each level. For example, you might name your spouse as the sole primary beneficiary and then split the contingent share equally among your children. The percentages at each level need to add up to one hundred percent, but you have a lot of flexibility in how you divide things up."] },
+      { h: "Why it matters more than most people realize", p: ["My wife works in probate real estate, so I have watched firsthand what happens when an asset has nowhere clean to go. Life insurance is normally one of the smoothest assets to transfer because it passes directly to a named beneficiary and skips probate entirely. But that advantage disappears if the primary beneficiary predeceases you and you never named a contingent. In that situation the death benefit usually flows into your estate and goes through the probate process, which can take months or even years and often costs the family money in legal fees.", "There is also a scenario called a simultaneous death, where you and your primary beneficiary die in the same accident. Most states have laws that create a presumption about who died first, but those rules are not always in your family's favor. A named contingent beneficiary sidesteps that uncertainty and keeps the money moving to the right people as quickly as possible."] },
+      { h: "Keeping your beneficiary designations up to date", p: ["Naming a contingent beneficiary is not a one-and-done task. Life changes. Marriages, divorces, births, and deaths all affect who you actually want to receive your benefit. I usually suggest reviewing your beneficiary designations any time you have a major life event, and at minimum every few years just to make sure nothing has gone stale. The form to update them is usually simple and free to complete through your insurance company.", "One thing to be careful about: if you name a minor child as a contingent beneficiary, many states including California will require a court-appointed guardian to manage the funds until the child reaches adulthood. Naming a trust set up for the child's benefit is often a cleaner solution, but that is a conversation worth having with an estate planning attorney who knows your full situation. I can help you think through the life insurance side of it, and then point you toward the right legal professional for the trust piece."] },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/who-should-i-name-as-beneficiary", label: "Who should I name as my life insurance beneficiary?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
