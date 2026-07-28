@@ -277,6 +277,22 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "how-long-does-life-insurance-take-to-pay-out",
+    question: "How long does life insurance take to pay out?",
+    dek: "Most life insurance claims are paid within 14 to 60 days of filing, but the timeline depends on how complete your paperwork is, the cause of death, and whether the policy is still in its contestability period.",
+    updated: "2026-07-28",
+    answer: "Most life insurance companies pay out a death benefit within 14 to 60 days after the beneficiary files a complete claim. That window can stretch longer if the policy is less than two years old, if the death is being investigated, or if the paperwork is incomplete. Filing quickly and keeping your beneficiary information current are the two biggest things a family can do to avoid delays. In California and Texas, state law generally requires insurers to pay or deny a claim within 30 to 40 days of receiving all required documents.",
+    sections: [
+      { h: "What happens right after a claim is filed", p: ["Once a beneficiary contacts the insurance company and submits a certified death certificate along with the claim form, the clock starts. Most carriers assign a claims examiner who reviews the documents, confirms the policy was in force, and verifies the beneficiary designation. If everything is in order and the death was from natural causes or an accident, payment often arrives within two to four weeks. Electronic transfers tend to be faster than paper checks.", "Incomplete paperwork is the most common reason for delays. A missing signature, an out-of-date beneficiary form, or a death certificate that lacks a cause-of-death statement can put a claim on hold for weeks. That is why I always encourage my clients to tell their beneficiaries exactly where the policy is, what company issued it, and what documents they will need. A fifteen-minute conversation today can save a grieving family a lot of frustration later."] },
+      { h: "When payouts take longer than usual", p: ["Three situations tend to slow things down. First, if the policy was issued within the past two years, it is inside what the industry calls the contestability period. During that window, the insurer has the right to review the original application for misstatements before paying. That review can add several weeks or even a couple of months to the process. Second, deaths that are ruled accidental, undetermined, or involve law enforcement investigations may require additional documentation before a claim can close. Third, if there is no named beneficiary, or if the named beneficiary has already passed away, the payout may have to go through the estate, which means probate. My wife works in probate real estate, and I have seen firsthand how long that process can drag on, sometimes a year or more.", "The good news is that most straightforward claims, a policy more than two years old, a clear cause of death, and a living named beneficiary, move quickly. Keeping your policy documents organized and your beneficiary designations updated is really all it takes to set your family up for a smooth claim."] },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/who-should-i-name-as-beneficiary", label: "Who should I name as my life insurance beneficiary?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
