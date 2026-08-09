@@ -42,7 +42,7 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
   const [coverage, setCoverage] = useState(250_000);
 
   const base = monthlyPer100k(age) * (coverage / 100_000);
-  const low = Math.max(8, Math.round((base * 0.85) / 1) );
+  const low = Math.max(8, Math.round((base * 0.85) / 1));
   const high = Math.round(base * 1.25);
 
   return (
@@ -67,13 +67,16 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
             min={25}
             max={70}
             value={age}
+            aria-describedby="est-note"
             onChange={(e) => setAge(Number(e.target.value))}
           />
         </div>
 
-        <div className="est-field">
+        <div className="est-field" role="group" aria-labelledby="est-coverage-label">
           <div className="est-field-top">
-            <label>Coverage</label>
+            <span id="est-coverage-label" className="est-control-label">
+              Coverage
+            </span>
           </div>
           <div className="est-cov">
             {COVERAGES.map((c) => (
@@ -81,6 +84,7 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
                 key={c.value}
                 type="button"
                 className={c.value === coverage ? "on" : ""}
+                aria-pressed={c.value === coverage}
                 onClick={() => setCoverage(c.value)}
               >
                 {c.label}
@@ -91,13 +95,13 @@ export default function Estimator({ phoneHref }: { phoneHref: string }) {
       </div>
 
       <div className="est-out">
-        <div className="est-figure">
+        <output className="est-figure" aria-live="polite" aria-atomic="true">
           <span className="est-range">
             {fmt(low)} to {fmt(high)}
           </span>
           <span className="est-per">/ month, roughly</span>
-        </div>
-        <p className="est-note">
+        </output>
+        <p className="est-note" id="est-note">
           Illustrative range for a healthy non-smoker on a 20-year term policy. Your real number
           depends on your health and the term you choose, that&rsquo;s the 15 minutes.
         </p>

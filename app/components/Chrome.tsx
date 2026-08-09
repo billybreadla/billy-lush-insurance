@@ -19,23 +19,28 @@ export function AcornMark({ size = 34 }: { size?: number }) {
 
 export function SiteHeader({ tagline = "Life insurance · Conejo Valley" }: { tagline?: string }) {
   return (
-    <header className="topbar">
-      <div className="topbar-in">
-        <a className="wordmark" href="/">
-          <AcornMark />
-          <span className="wordmark-text">
-            Billy Lush Insurance
-            <small>{tagline}</small>
-          </span>
-        </a>
-        <div className="topbar-cta">
-          <span className="topbar-lic">Licensed in CA &amp; TX</span>
-          <a className="topbar-phone" href={FACTS.phoneHref}>
-            {FACTS.phone}
+    <>
+      <a className="skip-link" href="#top">
+        Skip to main content
+      </a>
+      <header className="topbar">
+        <div className="topbar-in">
+          <a className="wordmark" href="/">
+            <AcornMark />
+            <span className="wordmark-text">
+              Billy Lush Insurance
+              <small>{tagline}</small>
+            </span>
           </a>
+          <div className="topbar-cta">
+            <span className="topbar-lic">Licensed in CA &amp; TX</span>
+            <a className="topbar-phone" href={FACTS.phoneHref}>
+              {FACTS.phone}
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 

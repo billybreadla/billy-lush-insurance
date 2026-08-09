@@ -48,7 +48,7 @@ export default function QuoteForm({ phone, phoneHref }: { phone: string; phoneHr
 
   if (status === "sent") {
     return (
-      <div className="qf qf-done" id="quote">
+      <div className="qf qf-done" id="quote" role="status" aria-live="polite">
         <p className="label">Got it</p>
         <h3>Your note&rsquo;s on my desk.</h3>
         <p>
@@ -60,13 +60,22 @@ export default function QuoteForm({ phone, phoneHref }: { phone: string; phoneHr
   }
 
   return (
-    <form className="qf" id="quote" onSubmit={handleSubmit} data-reveal>
+    <form
+      className="qf"
+      id="quote"
+      onSubmit={handleSubmit}
+      aria-busy={status === "sending"}
+      data-reveal
+    >
       <input type="hidden" name="form-name" value="quote-request" />
       {/* honeypot: humans never see it, bots fill it, Netlify drops those */}
-      <p className="qf-nectar" aria-hidden="true">
+      <p className="qf-nectar" hidden>
         <label>
           Leave this field empty: <input name="orchard" tabIndex={-1} autoComplete="off" />
         </label>
+      </p>
+      <p className="sr-only" role="status" aria-live="polite">
+        {status === "sending" ? "Sending your request." : ""}
       </p>
 
       <div className="qf-head">
@@ -132,7 +141,7 @@ export default function QuoteForm({ phone, phoneHref }: { phone: string; phoneHr
       </div>
 
       {status === "error" && (
-        <p className="qf-error">
+        <p className="qf-error" role="alert">
           Hm, that didn&rsquo;t go through. Try once more, or just text me at{" "}
           <a href={phoneHref}>{phone}</a>.
         </p>

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { SiteHeader, SiteFooter } from "../components/Chrome";
 import { SITE_URL, FACTS } from "../lib/site";
 import { ARTICLES } from "../lib/articles";
+import { SCHEMA_IDS, serializeJsonLd } from "../lib/schema";
+
+const url = `${SITE_URL}/learn`;
 
 export const metadata: Metadata = {
   title: "Life Insurance, Answered Plainly | Billy Lush",
@@ -12,17 +15,61 @@ export const metadata: Metadata = {
     title: "Life Insurance, Answered Plainly | Billy Lush",
     description:
       "Straight, plain-English answers to the real questions about life insurance and probate.",
-    url: `${SITE_URL}/learn`,
+    url,
     siteName: "Billy Lush Insurance",
     type: "website",
   },
 };
 
+function LearnJsonLd() {
+  const pageId = `${url}#webpage`;
+  const listId = `${url}#articles`;
+  const data = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": pageId,
+      url,
+      name: "Life Insurance, Answered Plainly",
+      description:
+        "Straight, plain-English answers to the real questions about life insurance and probate.",
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      mainEntity: { "@id": listId },
+      inLanguage: "en-US",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": listId,
+      numberOfItems: ARTICLES.length,
+      itemListElement: ARTICLES.map((article, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: article.question,
+        url: `${SITE_URL}/learn/${article.slug}`,
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
+        { "@type": "ListItem", position: 2, name: "Learn", item: { "@id": url } },
+      ],
+    },
+  ];
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />
+  );
+}
+
 export default function LearnIndex() {
   return (
     <>
+      <LearnJsonLd />
       <SiteHeader tagline="Plain-English answers" />
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="loc-hero">
           <div className="wrap-narrow">
             <p className="label">Learn</p>

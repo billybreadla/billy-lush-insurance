@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AcornMark, SiteHeader, SiteFooter } from "../../components/Chrome";
 import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY } from "../../lib/site";
 import { ARTICLES, ARTICLE_BY_SLUG } from "../../lib/articles";
+import { SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -35,42 +36,56 @@ export async function generateMetadata({
 function ArticleJsonLd({ slug }: { slug: string }) {
   const a = ARTICLE_BY_SLUG[slug];
   const url = `${SITE_URL}/learn/${a.slug}`;
+  const pageId = `${url}#webpage`;
+  const articleId = `${url}#article`;
   const data = [
     {
       "@context": "https://schema.org",
       "@type": "Article",
+      "@id": articleId,
+      url,
       headline: a.question,
       description: a.dek,
-      datePublished: a.updated,
       dateModified: a.updated,
-      mainEntityOfPage: url,
+      mainEntityOfPage: { "@id": pageId },
+      isPartOf: { "@id": SCHEMA_IDS.website },
       author: {
         "@type": "Person",
+        "@id": SCHEMA_IDS.billy,
         name: "Billy Lush",
         jobTitle: "Licensed Life Insurance Agent",
-        sameAs: [BAKERY.site, IMDB_URL, WIKIPEDIA_URL],
+        sameAs: [IMDB_URL, WIKIPEDIA_URL],
       },
-      publisher: { "@type": "Organization", name: "Billy Lush Insurance", url: SITE_URL },
+      publisher: {
+        "@type": "InsuranceAgency",
+        "@id": SCHEMA_IDS.agency,
+        name: "Billy Lush Insurance",
+        url: SITE_URL,
+      },
     },
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        { "@type": "Question", name: a.question, acceptedAnswer: { "@type": "Answer", text: a.answer } },
-      ],
+      "@type": "WebPage",
+      "@id": pageId,
+      url,
+      name: a.question,
+      description: a.dek,
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      mainEntity: { "@id": articleId },
+      inLanguage: "en-US",
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: "Learn", item: `${SITE_URL}/learn` },
-        { "@type": "ListItem", position: 3, name: a.question, item: url },
+        { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
+        { "@type": "ListItem", position: 2, name: "Learn", item: { "@id": `${SITE_URL}/learn` } },
+        { "@type": "ListItem", position: 3, name: a.question, item: { "@id": url } },
       ],
     },
   ];
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />
   );
 }
 
@@ -90,11 +105,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <ArticleJsonLd slug={a.slug} />
       <SiteHeader tagline="Plain-English answers" />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <article className="article">
           <div className="wrap-narrow">
             <p className="label">
-              <a href="/learn">Learn</a> · Updated {updatedLabel}
+              <a href="/learn">Learn</a> · Updated <time dateTime={a.updated}>{updatedLabel}</time>
             </p>
             <h1>{a.question}</h1>
 

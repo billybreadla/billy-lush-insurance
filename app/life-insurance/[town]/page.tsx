@@ -10,6 +10,7 @@ import {
   PRODUCTS,
   FAQS,
 } from "../../lib/site";
+import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
 export function generateStaticParams() {
   return TOWNS.map((t) => ({ town: t.slug }));
@@ -36,33 +37,57 @@ export async function generateMetadata({
 
 function TownJsonLd({ name, slug }: { name: string; slug: string }) {
   const url = `${SITE_URL}/life-insurance/${slug}`;
+  const pageId = `${url}#webpage`;
+  const serviceId = `${url}#service`;
+  const faqId = `${url}#faq`;
+  const areaServed = { "@type": "City", name: `${name}, CA` };
   const data = [
     {
       "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      name: `Billy Lush Insurance, ${name}`,
+      "@type": "WebPage",
+      "@id": pageId,
       url,
+      name: `Life Insurance in ${name}, CA`,
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      about: { "@id": SCHEMA_IDS.agency },
+      mainEntity: { "@id": serviceId },
+      hasPart: { "@id": faqId },
+      inLanguage: "en-US",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "@id": SCHEMA_IDS.agency,
+      name: "Billy Lush Insurance",
+      url: SITE_URL,
       telephone: "+1-323-580-9137",
       email: FACTS.email,
-      areaServed: { "@type": "City", name: `${name}, CA` },
-      knowsAbout: [
-        "Term life insurance",
-        "Whole life insurance",
-        "Final expense insurance",
-        "Indexed universal life insurance",
-      ],
+      areaServed,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": serviceId,
+      name: `Life insurance in ${name}`,
+      serviceType: PRODUCTS.map((product) => product.title),
+      provider: { "@id": SCHEMA_IDS.agency },
+      areaServed,
+      hasOfferCatalog: insuranceOfferCatalog(),
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: `Life Insurance in ${name}`, item: url },
+        { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
+        { "@type": "ListItem", position: 2, name: `Life Insurance in ${name}`, item: { "@id": url } },
       ],
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": faqId,
+      url,
+      isPartOf: { "@id": pageId },
       mainEntity: FAQS.map((f) => ({
         "@type": "Question",
         name: f.q,
@@ -71,7 +96,7 @@ function TownJsonLd({ name, slug }: { name: string; slug: string }) {
     },
   ];
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />
   );
 }
 
@@ -87,7 +112,7 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
       <TownJsonLd name={t.name} slug={t.slug} />
       <SiteHeader tagline={`Life insurance · ${t.name}`} />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="loc-hero">
           <div className="wrap">
             <p className="label">{t.county} · California</p>
@@ -181,8 +206,9 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
                   {x.name}
                 </a>
               ))}
-              <a className="town" href="/">
-                …and all of California &amp; Texas
+              <span className="town">All of California</span>
+              <a className="town" href="/texas-life-insurance">
+                Texas statewide
               </a>
             </div>
           </div>

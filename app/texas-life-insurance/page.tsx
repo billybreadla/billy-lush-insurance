@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AcornMark, SiteHeader, SiteFooter } from "../components/Chrome";
 import { SITE_URL, FACTS, CARRIERS, PRODUCTS, FAQS } from "../lib/site";
+import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "../lib/schema";
 
 const url = `${SITE_URL}/texas-life-insurance`;
 
@@ -20,33 +21,57 @@ export const metadata: Metadata = {
 };
 
 function TexasJsonLd() {
+  const pageId = `${url}#webpage`;
+  const serviceId = `${url}#service`;
+  const faqId = `${url}#faq`;
+  const areaServed = { "@type": "State", name: "Texas" };
   const data = [
     {
       "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      name: "Billy Lush Insurance, Texas",
+      "@type": "WebPage",
+      "@id": pageId,
       url,
+      name: "Texas Life Insurance",
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      about: { "@id": SCHEMA_IDS.agency },
+      mainEntity: { "@id": serviceId },
+      hasPart: { "@id": faqId },
+      inLanguage: "en-US",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "@id": SCHEMA_IDS.agency,
+      name: "Billy Lush Insurance",
+      url: SITE_URL,
       telephone: "+1-323-580-9137",
       email: FACTS.email,
-      areaServed: { "@type": "State", name: "Texas" },
-      knowsAbout: [
-        "Term life insurance",
-        "Whole life insurance",
-        "Final expense insurance",
-        "Indexed universal life insurance",
-      ],
+      areaServed,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": serviceId,
+      name: "Texas life insurance",
+      serviceType: PRODUCTS.map((product) => product.title),
+      provider: { "@id": SCHEMA_IDS.agency },
+      areaServed,
+      hasOfferCatalog: insuranceOfferCatalog(),
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: "Texas Life Insurance", item: url },
+        { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
+        { "@type": "ListItem", position: 2, name: "Texas Life Insurance", item: { "@id": url } },
       ],
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": faqId,
+      url,
+      isPartOf: { "@id": pageId },
       mainEntity: FAQS.map((f) => ({
         "@type": "Question",
         name: f.q,
@@ -55,7 +80,7 @@ function TexasJsonLd() {
     },
   ];
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />
   );
 }
 
@@ -65,7 +90,7 @@ export default function TexasPage() {
       <TexasJsonLd />
       <SiteHeader tagline="Life insurance · Texas" />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="loc-hero">
           <div className="wrap">
             <p className="label">Licensed across the state of Texas</p>

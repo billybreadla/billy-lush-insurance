@@ -1,68 +1,53 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 /* ————————————————————————————————————————————————
-   Two small bits of motion, on-brand with the oak motif:
-   1. A scroll-progress acorn that grows as you move down the page.
-   2. Reveal-on-scroll for anything tagged [data-reveal] and for the
-      .acorn-rule dividers (their lines "draw" outward, acorn drops in).
-   All respects prefers-reduced-motion.
+   A small scroll-progress acorn that grows as you move down the page.
+   It stays out of React's render cycle and respects reduced motion.
    ———————————————————————————————————————————————— */
 export default function Reveal() {
-  const [progress, setProgress] = useState(0);
+  const fillRef = useRef<HTMLDivElement>(null);
+  const acornRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
 
-    // 1. scroll progress
-    const onScroll = () => {
+    let frame = 0;
+    const updateProgress = () => {
       const h = document.documentElement;
       const max = h.scrollHeight - h.clientHeight;
-      setProgress(max > 0 ? Math.min(1, h.scrollTop / max) : 0);
+      const progress = max > 0 ? Math.min(1, h.scrollTop / max) : 0;
+      if (fillRef.current) fillRef.current.style.height = `${progress * 100}%`;
+      if (acornRef.current) acornRef.current.style.transform = `scale(${0.45 + progress * 0.55})`;
+      frame = 0;
     };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
 
-    // 2. reveal on scroll
-    const targets = document.querySelectorAll<HTMLElement>("[data-reveal], .acorn-rule");
-    if (reduce) {
-      targets.forEach((t) => t.classList.add("in"));
-    } else {
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("in");
-              io.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
-      );
-      targets.forEach((t) => io.observe(t));
-      return () => {
-        io.disconnect();
-        window.removeEventListener("scroll", onScroll);
-      };
-    }
-    return () => window.removeEventListener("scroll", onScroll);
+    const onScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateProgress);
+    };
+
+    updateProgress();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      if (frame) window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
-  // acorn grows from a small cap to a full nut as you scroll
-  const grow = 0.45 + progress * 0.55;
-
   return (
-    <div className="oakprog" aria-hidden="true" title="You're growing an oak as you read">
+    <div className="oakprog" aria-hidden="true">
       <div className="oakprog-track">
-        <div className="oakprog-fill" style={{ height: `${progress * 100}%` }} />
+        <div className="oakprog-fill" ref={fillRef} />
       </div>
       <svg
+        ref={acornRef}
         width="26"
         height="26"
         viewBox="0 0 48 48"
         fill="none"
-        style={{ transform: `scale(${grow})` }}
+        style={{ transform: "scale(0.45)" }}
       >
         <path
           d="M10 21c0-8 6.5-13 14-13s14 5 14 13c0 1.5-1 2.5-2.5 2.5h-23C11 23.5 10 22.5 10 21Z"

@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Estimator from "./Estimator";
 import Reveal from "./Reveal";
 import QuoteForm from "./components/QuoteForm";
 import { AcornMark, SiteHeader, SiteFooter } from "./components/Chrome";
+import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "./lib/schema";
 import {
   SITE_URL,
   FACTS,
@@ -23,21 +25,37 @@ const TESTIMONIALS: { quote: string; who: string }[] = [
 ];
 
 function JsonLd() {
+  const pageId = `${SITE_URL}/#webpage`;
+  const faqId = `${SITE_URL}/#faq`;
+  const imageId = `${SITE_URL}/#primaryimage`;
   const data = [
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": pageId,
+      url: SITE_URL,
+      name: "Billy Lush Insurance | Life Insurance in Newbury Park & the Conejo Valley",
+      isPartOf: { "@id": SCHEMA_IDS.website },
+      mainEntity: { "@id": SCHEMA_IDS.agency },
+      primaryImageOfPage: { "@id": imageId },
+      hasPart: { "@id": faqId },
+      inLanguage: "en-US",
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "InsuranceAgency",
+      "@id": SCHEMA_IDS.agency,
       name: "Billy Lush Insurance",
       url: SITE_URL,
-      image: `${SITE_URL}/images/billy-conejo-hills.jpg`,
+      image: { "@id": imageId },
       telephone: "+1-323-580-9137",
       email: FACTS.email,
-      sameAs: [BAKERY.site, IMDB_URL, WIKIPEDIA_URL],
-      founder: {
+      employee: {
         "@type": "Person",
+        "@id": SCHEMA_IDS.billy,
         name: "Billy Lush",
         jobTitle: "Licensed Life Insurance Agent",
-        sameAs: [BAKERY.site, IMDB_URL, WIKIPEDIA_URL],
+        sameAs: [IMDB_URL, WIKIPEDIA_URL],
         hasCredential: [
           {
             "@type": "EducationalOccupationalCredential",
@@ -73,10 +91,24 @@ function JsonLd() {
         "Final expense insurance",
         "Indexed universal life insurance",
       ],
+      hasOfferCatalog: insuranceOfferCatalog(),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "@id": imageId,
+      url: `${SITE_URL}/images/billy-conejo-hills.jpg`,
+      width: { "@type": "QuantitativeValue", value: 1201, unitText: "pixels" },
+      height: { "@type": "QuantitativeValue", value: 1800, unitText: "pixels" },
+      caption:
+        "Billy Lush, licensed life insurance agent, in the hills of the Conejo Valley near Newbury Park",
     },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": faqId,
+      url: SITE_URL,
+      isPartOf: { "@id": pageId },
       mainEntity: FAQS.map((f) => ({
         "@type": "Question",
         name: f.q,
@@ -85,7 +117,7 @@ function JsonLd() {
     },
   ];
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }} />
   );
 }
 
@@ -97,7 +129,7 @@ export default function Home() {
 
       <SiteHeader />
 
-      <main id="top">
+      <main id="top" tabIndex={-1}>
         <section className="hero" style={{ padding: 0 }}>
           <div className="hero-grid">
             <div>
@@ -121,9 +153,12 @@ export default function Home() {
               </div>
             </div>
             <figure className="hero-photo">
-              <img
+              <Image
                 src="/images/billy-conejo-hills.jpg"
                 alt="Billy Lush, licensed life insurance agent, in the hills of the Conejo Valley near Newbury Park"
+                fill
+                quality={60}
+                sizes="(max-width: 860px) calc(100vw - 48px), 440px"
               />
               <figcaption>Billy: agent, baker, actor, neighbor</figcaption>
             </figure>
@@ -284,7 +319,11 @@ export default function Home() {
               ))}
             </div>
             <p className="faq-more">
-              More plain-English answers: <a href="/learn">does life insurance go through probate?</a>,{" "}
+              More plain-English answers:{" "}
+              <a href="/learn/does-life-insurance-go-through-probate">
+                does life insurance go through probate?
+              </a>
+              ,{" "}
               <a href="/learn/how-much-does-life-insurance-cost">what it really costs</a>, and{" "}
               <a href="/learn/term-life-vs-whole-life-insurance">term vs. whole life</a>.
             </p>
@@ -323,7 +362,10 @@ export default function Home() {
                       {t.hq ? " (home base)" : ""}
                     </a>
                   ))}
-                  <span className="town">…and all of California &amp; Texas</span>
+                  <span className="town">All of California</span>
+                  <a className="town" href="/texas-life-insurance">
+                    Texas statewide
+                  </a>
                 </div>
               </div>
             </div>
@@ -348,7 +390,12 @@ export default function Home() {
                 </div>
               </div>
               <figure className="friday-photo">
-                <img src="/images/billy-holding-loaves.jpg" alt="Billy Lush holding fresh-baked sourdough loaves at Billy Bread in Newbury Park" />
+                <Image
+                  src="/images/billy-holding-loaves.jpg"
+                  alt="Billy Lush holding fresh-baked sourdough loaves at Billy Bread in Newbury Park"
+                  fill
+                  sizes="(max-width: 860px) calc(100vw - 48px), 420px"
+                />
               </figure>
             </div>
           </div>
