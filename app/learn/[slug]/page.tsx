@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { AcornMark, SiteHeader, SiteFooter } from "../../components/Chrome";
 import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY } from "../../lib/site";
 import { ARTICLES, ARTICLE_BY_SLUG } from "../../lib/articles";
-import { SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
+import { billyBreadOrganization, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -55,6 +55,7 @@ function ArticleJsonLd({ slug }: { slug: string }) {
         name: "Billy Lush",
         jobTitle: "Licensed Life Insurance Agent",
         sameAs: [IMDB_URL, WIKIPEDIA_URL],
+        owns: { "@id": SCHEMA_IDS.billyBread },
       },
       publisher: {
         "@type": "InsuranceAgency",
@@ -62,6 +63,10 @@ function ArticleJsonLd({ slug }: { slug: string }) {
         name: "Billy Lush Insurance",
         url: SITE_URL,
       },
+    },
+    {
+      "@context": "https://schema.org",
+      ...billyBreadOrganization(),
     },
     {
       "@context": "https://schema.org",

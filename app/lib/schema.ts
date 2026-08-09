@@ -1,10 +1,20 @@
-import { PRODUCTS, SITE_URL } from "./site";
+import { BAKERY, PRODUCTS, SITE_URL } from "./site";
 
 export const SCHEMA_IDS = {
   website: `${SITE_URL}/#website`,
   agency: `${SITE_URL}/#agency`,
   billy: `${SITE_URL}/#billy-lush`,
+  billyBread: `${BAKERY.site}/#organization`,
 };
+
+export function billyBreadOrganization() {
+  return {
+    "@type": "Organization",
+    "@id": SCHEMA_IDS.billyBread,
+    name: "Billy Bread",
+    url: BAKERY.site,
+  };
+}
 
 export function insuranceOfferCatalog() {
   return {

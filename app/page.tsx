@@ -3,7 +3,12 @@ import Estimator from "./Estimator";
 import Reveal from "./Reveal";
 import QuoteForm from "./components/QuoteForm";
 import { AcornMark, SiteHeader, SiteFooter } from "./components/Chrome";
-import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "./lib/schema";
+import {
+  billyBreadOrganization,
+  insuranceOfferCatalog,
+  SCHEMA_IDS,
+  serializeJsonLd,
+} from "./lib/schema";
 import {
   SITE_URL,
   FACTS,
@@ -56,6 +61,7 @@ function JsonLd() {
         name: "Billy Lush",
         jobTitle: "Licensed Life Insurance Agent",
         sameAs: [IMDB_URL, WIKIPEDIA_URL],
+        owns: { "@id": SCHEMA_IDS.billyBread },
         hasCredential: [
           {
             "@type": "EducationalOccupationalCredential",
@@ -92,6 +98,10 @@ function JsonLd() {
         "Indexed universal life insurance",
       ],
       hasOfferCatalog: insuranceOfferCatalog(),
+    },
+    {
+      "@context": "https://schema.org",
+      ...billyBreadOrganization(),
     },
     {
       "@context": "https://schema.org",
