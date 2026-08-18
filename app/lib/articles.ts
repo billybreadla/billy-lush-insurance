@@ -327,6 +327,23 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "when-is-the-best-age-to-buy-life-insurance",
+    question: "When is the best age to buy life insurance?",
+    dek: "The best age to buy life insurance depends on your situation, but buying younger almost always means lower rates and better options.",
+    updated: "2026-08-18",
+    answer: "The best age to buy life insurance is usually as soon as you have people depending on your income or debts that would fall on someone else. That said, the younger and healthier you are when you apply, the lower your premiums tend to be and the easier it is to qualify. Most people benefit from at least looking at coverage in their 20s or 30s, but life insurance can make sense at almost any age. The right time is less about a number on a calendar and more about what is happening in your life right now.",
+    sections: [
+      { h: "Why younger usually means cheaper and easier", p: ["Life insurance premiums are based heavily on two things: your age and your health. Insurers look at risk, and statistically a healthy 28-year-old is a lower risk than a healthy 48-year-old. That difference shows up directly in your monthly cost. I have seen clients lock in rates in their late 20s or early 30s on a 20- or 30-year term policy and pay a fraction of what someone shopping for the same coverage a decade later would pay. The earlier you buy, the longer you get to hold that low rate.", "Health also tends to get more complicated as we age. A condition that does not exist at 30 might show up at 42 and make coverage harder to get or more expensive. Buying while you are healthy gives you options. Once a policy is in force, the carrier cannot raise your rate or cancel you just because your health changes later."] },
+      { h: "The life events that actually trigger the need", p: ["Age alone is not the whole story. What really matters is whether someone else is exposed to financial risk if you die. Getting married, buying a home with a mortgage, having a child, starting a business with a partner, or becoming the primary earner in a household are all moments that shift the math. Any one of those events is often a better reason to buy than hitting a particular birthday.", "On the flip side, a single 22-year-old with no debt and no dependents may not need much coverage yet, and I will tell you that honestly. There is no reason to buy something you do not need. But if a life change is on the horizon, getting coverage before it happens rather than after is almost always the smarter move, because you lock in your current health rating."] },
+      { h: "What about buying in your 50s, 60s, or beyond?", p: ["It is absolutely not too late. Coverage is still available and can still do a real job for your family, it just costs more and the options may look different. Term policies may have shorter available lengths, and some people in this stage find that a permanent policy or a final expense policy fits better than a traditional term. The key is understanding what you actually need the coverage to accomplish, whether that is income replacement, covering a mortgage, leaving something for a spouse, or simply handling end-of-life costs so your family does not have to.", "My wife works in probate real estate, and I have watched families deal with the financial mess that follows when someone put off planning and then ran out of time. That experience shapes how I think about this. The best age to buy is rarely later. But whatever your age is today, that is a fine place to start the conversation."] },
+    ],
+    related: [
+      { href: "/learn/how-much-does-life-insurance-cost", label: "How much does life insurance cost?" },
+      { href: "/learn/term-life-vs-whole-life-insurance", label: "Term life vs. whole life: which one do you need?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
