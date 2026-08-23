@@ -25,7 +25,7 @@ export async function generateMetadata({
   const t = TOWN_BY_SLUG[town];
   if (!t) return {};
   const title = `Life Insurance in ${t.name}, CA | Billy Lush`;
-  const description = `Term, whole life, final expense & IUL for ${t.name} families, from Billy Lush, a licensed local agent who lives right here in the Conejo Valley. Straight answers, real numbers, a free 15-minute conversation.`;
+  const description = t.meta;
   const url = `${SITE_URL}/life-insurance/${t.slug}`;
   return {
     title,

@@ -8,12 +8,12 @@ const url = `${SITE_URL}/texas-life-insurance`;
 export const metadata: Metadata = {
   title: "Texas Life Insurance | Billy Lush, Licensed Agent in TX",
   description:
-    "Licensed Texas life insurance agent Billy Lush: term, whole life, final expense & IUL for families in Houston, Austin, Dallas, San Antonio and across Texas. Plain talk, real numbers, a free 15-minute call. TX Lic. #3268220.",
+    "Term, whole life, final expense & IUL for families across Texas, Houston to Dallas, set up so money reaches them fast and never waits on probate. TX Lic. #3268220.",
   alternates: { canonical: "/texas-life-insurance" },
   openGraph: {
     title: "Texas Life Insurance | Billy Lush, Licensed Agent in TX",
     description:
-      "Term, whole life, final expense & IUL for Texas families, from a licensed agent who keeps it plain and honest. TX Lic. #3268220.",
+      "Term, whole life, final expense & IUL for Texas families, set up so money reaches them fast and outside probate. Plain talk. TX Lic. #3268220.",
     url,
     siteName: "Billy Lush Insurance",
     type: "website",

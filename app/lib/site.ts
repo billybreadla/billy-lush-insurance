@@ -1,8 +1,8 @@
-/* ————————————————————————————————————————————————
+/* ------------------------------------------------------------
    SHARED SITE DATA: single source of truth for the
    homepage and every location/topic page. Keep copy
    and facts here so a change ripples everywhere.
-   ———————————————————————————————————————————————— */
+   ------------------------------------------------------------ */
 
 export const SITE_URL = "https://billylushinsurance.com";
 
@@ -59,6 +59,9 @@ export type Town = {
   /* one distinct, human sentence per town so location pages aren't thin
      duplicate content; each names something real about the place. */
   blurb: string;
+  /* per-town meta description for search results, with the estate angle
+     woven in and phrased differently per town so pages are not clones. */
+  meta: string;
 };
 
 export const TOWNS: Town[] = [
@@ -69,6 +72,8 @@ export const TOWNS: Town[] = [
     hq: true,
     blurb:
       "It's home base, where I bake, where my kids go to school, and where you can find me most Fridays with flour on my hands. If you're in Newbury Park, we're practically neighbors.",
+    meta:
+      "Term, whole life, final expense & IUL in Newbury Park, from the agent down the street, set up so money reaches your family fast and never sits in probate.",
   },
   {
     name: "Thousand Oaks",
@@ -76,6 +81,8 @@ export const TOWNS: Town[] = [
     county: "Ventura County",
     blurb:
       "From the Conejo to the new builds off the 23, Thousand Oaks families are exactly who I built this for: mortgages, kids, and parents to look after, all at once.",
+    meta:
+      "Term, whole life, final expense & IUL for Thousand Oaks families, with straight answers on estate and probate situations, when the timing matters most.",
   },
   {
     name: "Westlake Village",
@@ -83,6 +90,8 @@ export const TOWNS: Town[] = [
     county: "Los Angeles County",
     blurb:
       "Around the lake the questions skew toward permanent coverage and leaving something behind: whole life and IUL done without the hard sell. I'll tell you straight what fits.",
+    meta:
+      "Term, whole life & IUL near Westlake Village, shaped by what your kids inherit and kept out of probate, from a licensed local agent.",
   },
   {
     name: "Oak Park",
@@ -90,6 +99,8 @@ export const TOWNS: Town[] = [
     county: "Ventura County",
     blurb:
       "A tight, family-first town, the kind of place where a name still gets passed across a fence. That's how nearly all my work comes, and Oak Park is no exception.",
+    meta:
+      "Oak Park life insurance from a neighbor: term, whole life, final expense & IUL, set up so what you leave reaches your people without getting stuck in probate.",
   },
   {
     name: "Agoura Hills",
@@ -97,6 +108,8 @@ export const TOWNS: Town[] = [
     county: "Los Angeles County",
     blurb:
       "Just over the hill from the bakery. Whether it's term coverage for the young-family years or final expense for a parent, the fifteen-minute conversation travels the 101 just fine.",
+    meta:
+      "Term for the young-family years, final expense for a parent, IUL in between: Agoura Hills coverage from Billy Lush, including estate and probate situations.",
   },
   {
     name: "Moorpark",
@@ -104,6 +117,8 @@ export const TOWNS: Town[] = [
     county: "Ventura County",
     blurb:
       "Moorpark runs on the same thing I do: neighbors who know each other. Kitchen-table coverage for families who'd rather buy from someone they can actually find.",
+    meta:
+      "Moorpark families can cover term, whole life, final expense & IUL with a neighbor, set up so the money arrives quickly instead of waiting on probate.",
   },
   {
     name: "Camarillo",
@@ -111,6 +126,8 @@ export const TOWNS: Town[] = [
     county: "Ventura County",
     blurb:
       "From the old town to the newer tracts, Camarillo families ask me the same honest questions about cost and final expense, and leave with a real number, not an internet guess.",
+    meta:
+      "Honest answers on cost and final expense for Camarillo families, plus term, whole life & IUL set up to pay fast after a death, outside of probate court.",
   },
   {
     name: "Simi Valley",
@@ -118,6 +135,8 @@ export const TOWNS: Town[] = [
     county: "Ventura County",
     blurb:
       "Simi's a working-family town, and term life is usually the workhorse that fits it best: the most protection per dollar for the years that need it most.",
+    meta:
+      "Simi Valley term life that fits working-family budgets, plus whole life, final expense & IUL, built so a death benefit pays your family fast, outside probate.",
   },
 ];
 

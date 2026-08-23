@@ -21,14 +21,14 @@ const mono = DM_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://billylushinsurance.com"),
-  title: "Billy Lush Insurance | Life Insurance in Newbury Park & the Conejo Valley",
+  title: "Newbury Park Life Insurance Agent | Billy Lush Insurance",
   description:
-    "Term, whole life, final expense, and IUL from a licensed agent who actually lives here. I'm Billy Lush, you may know me from Billy Bread. Straight answers, real numbers, 15-minute conversations. Serving the Conejo Valley, all of California, and Texas.",
+    "Term, whole life, and IUL for Conejo Valley families, set up so money reaches your people fast and never sits in probate. Licensed in CA and TX. No pressure.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Billy Lush Insurance | Life Insurance in Newbury Park & the Conejo Valley",
+    title: "Newbury Park Life Insurance Agent | Billy Lush Insurance",
     description:
-      "Life insurance from the guy who bakes your bread. Term, whole life, final expense & IUL, plain talk from a local agent, licensed in CA & TX.",
+      "Life insurance from the guy who bakes your bread, set up so money reaches your people fast and never sits in probate. Licensed in CA & TX. No pressure.",
     url: "https://billylushinsurance.com",
     siteName: "Billy Lush Insurance",
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Billy Lush Insurance | Life Insurance in the Conejo Valley",
+    title: "Newbury Park Life Insurance Agent | Billy Lush Insurance",
     description:
-      "Life insurance from the guy who bakes your bread. Term, whole life, final expense & IUL, plain talk from a local agent, licensed in CA & TX.",
+      "Life insurance from the guy who bakes your bread, set up so money reaches your people fast and never sits in probate. Licensed in CA & TX. No pressure.",
   },
 };
 
