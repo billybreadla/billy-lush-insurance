@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { FACTS } from "./lib/site";
 
 export const alt = "Billy Lush Insurance, life insurance in the Conejo Valley, licensed in CA & TX";
 export const size = { width: 1200, height: 630 };
@@ -65,7 +66,7 @@ export default function OpengraphImage() {
           }}
         >
           <div>Newbury Park &amp; the Conejo Valley</div>
-          <div style={{ color: "#8a5a2b" }}>Licensed in CA &amp; TX · (323) 580-9137</div>
+          <div style={{ color: "#8a5a2b" }}>{`Licensed in CA & TX · ${FACTS.phone}`}</div>
         </div>
       </div>
     ),

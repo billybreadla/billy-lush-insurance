@@ -1,8 +1,8 @@
-/* ————————————————————————————————————————————————
-   Billy Lush Insurance — "Under the Oak"
+/* ================================================================
+   Billy Lush Insurance: "Under the Oak"
    Warm parchment, deep oak-green ink, editorial type.
    Display: Young Serif · Body: Newsreader · Labels: DM Mono
-   ———————————————————————————————————————————————— */
+   ================================================================ */
 
 :root {
   --paper: #f5efe2;
@@ -81,7 +81,7 @@ a { color: inherit; }
   color: var(--acorn);
 }
 
-/* ——— top bar ——— */
+/* === top bar === */
 .topbar { border-bottom: 1px solid var(--line); position: relative; z-index: 2; }
 .topbar-in {
   display: flex; align-items: center; justify-content: space-between;
@@ -107,7 +107,7 @@ a { color: inherit; }
 }
 .topbar-phone:hover { background: var(--ink); color: var(--paper); }
 
-/* ——— hero ——— */
+/* === hero === */
 .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
 .hero-grid {
   display: grid; grid-template-columns: 7fr 5fr; gap: 48px; align-items: end;
@@ -125,7 +125,7 @@ a { color: inherit; }
 .hero-sub strong { color: var(--ink); font-weight: 600; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; }
 
-/* ——— location pages (town hero) ——— */
+/* === location pages (town hero) === */
 .loc-hero { padding: 64px 0 8px; border-bottom: 1px solid var(--line); }
 .loc-hero h1 {
   font-size: clamp(2.4rem, 5.4vw, 4rem); letter-spacing: -0.01em; margin: 20px 0 0;
@@ -159,7 +159,7 @@ a { color: inherit; }
   background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px;
 }
 
-/* ——— marquee rule ——— */
+/* === marquee rule === */
 .acorn-rule {
   display: flex; align-items: center; gap: 18px; max-width: var(--max);
   margin: 0 auto; padding: 26px 24px;
@@ -170,7 +170,7 @@ a { color: inherit; }
   text-transform: uppercase; color: var(--ink-soft); text-align: center;
 }
 
-/* ——— sections ——— */
+/* === sections === */
 section { padding: 84px 0; }
 .sec-head { display: flex; align-items: baseline; gap: 22px; margin-bottom: 42px; }
 .sec-no { font-family: var(--font-mono), monospace; font-size: 0.78rem; color: var(--gold); letter-spacing: 0.1em; }
@@ -185,7 +185,7 @@ section { padding: 84px 0; }
 .story-body p + p { margin-top: 1.2em; }
 .story-body .sign { font-family: var(--font-display), serif; font-size: 1.3rem; margin-top: 1.6em; color: var(--acorn); }
 
-/* ——— products ——— */
+/* === products === */
 .products { border-bottom: 1px solid var(--line); background: var(--paper-deep); }
 .prod-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
 .prod {
@@ -199,7 +199,7 @@ section { padding: 84px 0; }
 .prod .fit { margin-top: 16px; font-size: 0.92rem; color: var(--ink); }
 .prod .fit b { font-family: var(--font-mono), monospace; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--acorn); font-weight: 500; margin-right: 8px; }
 
-/* ——— faq ——— */
+/* === faq === */
 .faq { border-bottom: 1px solid var(--line); }
 .faq-list { max-width: 780px; }
 .faq details { border-top: 1px solid var(--line); }
@@ -216,7 +216,7 @@ section { padding: 84px 0; }
 .faq-more a { text-decoration-color: var(--gold); }
 .faq .a p + p { margin-top: 0.9em; }
 
-/* ——— local ——— */
+/* === local === */
 .local { border-bottom: 1px solid var(--line); }
 .local-grid { display: grid; grid-template-columns: 6fr 6fr; gap: 56px; align-items: start; }
 .towns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
@@ -230,14 +230,14 @@ a.town:hover { border-color: var(--gold); background: rgba(185, 133, 47, 0.08); 
 a.town.hq:hover { background: var(--ink); border-color: var(--gold); }
 .tx-note { margin-top: 22px; color: var(--ink-soft); font-size: 0.95rem; }
 
-/* ——— cta ——— */
+/* === cta === */
 .cta { text-align: center; }
 .cta h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); max-width: 18em; margin: 0 auto; }
 .cta-sub { max-width: 38em; margin: 22px auto 38px; color: var(--ink-soft); }
 .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .cta-fine { margin-top: 26px; font-family: var(--font-mono), monospace; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
 
-/* ——— footer ——— */
+/* === footer === */
 footer { border-top: 1px solid var(--line); background: var(--ink); color: var(--paper); }
 footer .wrap { padding: 56px 24px 40px; }
 .foot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
@@ -250,10 +250,10 @@ footer .wrap { padding: 56px 24px 40px; }
 }
 .fine a { color: rgba(245, 239, 226, 0.75); text-decoration-color: var(--gold); }
 
-/* ——— reveal on scroll ——— */
+/* === reveal on scroll === */
 [data-reveal] { opacity: 1; transform: none; }
 
-/* ——— scroll-progress acorn (the oak you grow as you read) ——— */
+/* === scroll-progress acorn (the oak you grow as you read) === */
 .oakprog {
   position: fixed; right: 18px; bottom: 22px; z-index: 900;
   display: flex; flex-direction: column; align-items: center; gap: 8px;
@@ -266,7 +266,7 @@ footer .wrap { padding: 56px 24px 40px; }
 .oakprog-fill { width: 100%; background: var(--gold); transition: height 0.12s linear; }
 .oakprog svg { transition: transform 0.12s linear; filter: drop-shadow(0 1px 1px rgba(31,59,44,0.18)); }
 
-/* ——— estimator ——— */
+/* === estimator === */
 .estimate { padding-top: 28px; }
 .est {
   border: 1px solid var(--line); border-radius: 18px; background: var(--paper);
@@ -313,7 +313,7 @@ footer .wrap { padding: 56px 24px 40px; }
 .est-note { margin: 16px auto 22px; font-size: 0.9rem; color: var(--ink-soft); max-width: 30em; }
 .est-cta { width: 100%; }
 
-/* ——— proof / credibility ——— */
+/* === proof / credibility === */
 .proof { border-bottom: 1px solid var(--line); background: var(--paper-deep); padding: 56px 0; }
 .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
 .proof-item .label { display: block; margin-bottom: 12px; }
@@ -325,7 +325,7 @@ footer .wrap { padding: 56px 24px 40px; }
 .quote blockquote { font-family: var(--font-display), serif; font-size: 1.2rem; line-height: 1.4; }
 .quote figcaption { margin-top: 12px; font-family: var(--font-mono), monospace; font-size: 0.74rem; letter-spacing: 0.1em; color: var(--ink-soft); }
 
-/* ——— friday at the bakery ——— */
+/* === friday at the bakery === */
 .friday {
   margin-top: 56px; display: grid; grid-template-columns: 7fr 5fr; gap: 40px; align-items: center;
   background: var(--ink); color: var(--paper); border-radius: 18px; overflow: hidden;
@@ -340,7 +340,7 @@ footer .wrap { padding: 56px 24px 40px; }
 .friday-photo { position: relative; align-self: stretch; min-height: 260px; }
 .friday-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; }
 
-/* ——— booking embed ——— */
+/* === booking embed === */
 .booking { margin-top: 38px; scroll-margin-top: 90px; }
 .booking-or { font-family: var(--font-mono), monospace; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 18px; }
 .booking-frame {
@@ -349,7 +349,7 @@ footer .wrap { padding: 56px 24px 40px; }
 }
 .booking-frame iframe { width: 100%; min-height: 620px; border: 0; display: block; }
 
-/* ——— quote form (lead capture → Netlify Forms) ——— */
+/* === quote form (lead capture → Netlify Forms) === */
 .qf {
   max-width: 760px; margin: 44px auto 0; padding: 36px 36px 32px; text-align: left;
   background: var(--paper-deep); border: 1px solid var(--line); border-radius: 16px;
@@ -391,7 +391,7 @@ footer .wrap { padding: 56px 24px 40px; }
 .est-alt { margin-top: 14px; font-size: 0.88rem; color: var(--ink-soft); text-align: center; }
 .est-alt a { text-decoration-color: var(--gold); text-underline-offset: 2px; }
 
-/* ——— mobile ——— */
+/* === mobile === */
 @media (max-width: 860px) {
   .hero-grid, .story-grid, .local-grid { grid-template-columns: 1fr; gap: 36px; }
   .prod-grid { grid-template-columns: 1fr; }
@@ -430,7 +430,7 @@ footer .wrap { padding: 56px 24px 40px; }
   .oakprog { display: none; }
 }
 
-/* ——— GEO / learn articles ——— */
+/* === GEO / learn articles === */
 .article { padding: 56px 0 84px; }
 .article h1 { font-size: clamp(2rem, 4.6vw, 3rem); letter-spacing: -0.01em; margin: 16px 0 0; }
 .article .label a { text-decoration-color: var(--gold); }

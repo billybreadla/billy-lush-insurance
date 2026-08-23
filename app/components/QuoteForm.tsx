@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-/* ————————————————————————————————————————————————
+/* ================================================================
    Lead-capture form → Netlify Forms.
    The form definition Netlify detects at build time lives in
    public/__forms.html (static HTML, required because the Next
@@ -13,7 +13,7 @@ import Link from "next/link";
    Field list (keep identical in public/__forms.html):
    name, phone, email, interest, besttime, note,
    consent (checkbox, always "yes"), orchard (honeypot).
-   ———————————————————————————————————————————————— */
+   ================================================================ */
 
 const INTERESTS = [
   "Not sure yet, that's why I'm here",

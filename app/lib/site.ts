@@ -6,8 +6,28 @@
 
 export const SITE_URL = "https://billylushinsurance.com";
 
+/* Agency locality identity for JSON-LD. Billy works from Newbury Park
+   and no street address is published anywhere, so this stays at the
+   city level. Do not add a street address without Billy's say-so. */
+export const AGENCY_ADDRESS = {
+  locality: "Newbury Park",
+  region: "CA",
+  postalCode: "91320",
+  country: "US",
+};
+
+/* Default social share image (og:image / twitter:image) and the
+   default image for Article JSON-LD. Dimensions are the real file
+   dimensions (verified with `file` on 2026-08-22). */
+export const SHARE_IMAGE = {
+  url: `${SITE_URL}/images/billy-holding-loaves.jpg`,
+  width: 1600,
+  height: 1066,
+};
+
 export const FACTS = {
   phone: "(323) 580-9137", // confirmed by Billy 2026-06-10
+  phoneE164: "+13235809137", // machine-readable form for JSON-LD telephone fields
   phoneHref: "tel:+13235809137",
   smsHref: "sms:+13235809137",
   email: "billy@billylushinsurance.com", // Porkbun forward → billylush@gmail.com

@@ -1,9 +1,9 @@
-/* ————————————————————————————————————————————————
+/* ================================================================
    GEO / answer articles, written to directly answer the
    natural-language questions people ask Google & AI engines,
    in Billy's plain-talk, probate-aware voice. Each leads with
    a short, citable answer, then explains.
-   ———————————————————————————————————————————————— */
+   ================================================================ */
 
 export type Article = {
   slug: string;

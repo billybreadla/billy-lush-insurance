@@ -2,10 +2,10 @@
 
 import { useEffect, useRef } from "react";
 
-/* ————————————————————————————————————————————————
+/* ================================================================
    A small scroll-progress acorn that grows as you move down the page.
    It stays out of React's render cycle and respects reduced motion.
-   ———————————————————————————————————————————————— */
+   ================================================================ */
 export default function Reveal() {
   const fillRef = useRef<HTMLDivElement>(null);
   const acornRef = useRef<SVGSVGElement>(null);

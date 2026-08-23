@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SiteHeader, SiteFooter } from "../components/Chrome";
-import { SITE_URL, FACTS } from "../lib/site";
+import { SITE_URL, FACTS, SHARE_IMAGE } from "../lib/site";
 import { ARTICLES } from "../lib/articles";
 import { SCHEMA_IDS, serializeJsonLd } from "../lib/schema";
 
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     url,
     siteName: "Billy Lush Insurance",
     type: "website",
+    images: [{ url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Life Insurance, Answered Plainly | Billy Lush",
+    description:
+      "Straight, plain-English answers to the real questions about life insurance and probate.",
+    images: [SHARE_IMAGE.url],
   },
 };
 

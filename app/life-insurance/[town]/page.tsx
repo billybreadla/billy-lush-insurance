@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AcornMark, SiteHeader, SiteFooter } from "../../components/Chrome";
 import {
-  SITE_URL,
   FACTS,
+  SITE_URL,
   CARRIERS,
   TOWNS,
   TOWN_BY_SLUG,
   PRODUCTS,
   FAQS,
+  SHARE_IMAGE,
 } from "../../lib/site";
-import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
+import { insuranceAgency, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
 export function generateStaticParams() {
   return TOWNS.map((t) => ({ town: t.slug }));
@@ -31,7 +32,20 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/life-insurance/${t.slug}` },
-    openGraph: { title, description, url, siteName: "Billy Lush Insurance", type: "website" },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Billy Lush Insurance",
+      type: "website",
+      images: [{ url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [SHARE_IMAGE.url],
+    },
   };
 }
 
@@ -39,8 +53,10 @@ function TownJsonLd({ name, slug }: { name: string; slug: string }) {
   const url = `${SITE_URL}/life-insurance/${slug}`;
   const pageId = `${url}#webpage`;
   const serviceId = `${url}#service`;
-  const faqId = `${url}#faq`;
   const areaServed = { "@type": "City", name: `${name}, CA` };
+  /* The agency node is the same canonical object as on the homepage
+     (same @id), scoped here with this town. No FAQPage here: the FAQ
+     content lives (with its schema) on the homepage only. */
   const data = [
     {
       "@context": "https://schema.org",
@@ -51,18 +67,11 @@ function TownJsonLd({ name, slug }: { name: string; slug: string }) {
       isPartOf: { "@id": SCHEMA_IDS.website },
       about: { "@id": SCHEMA_IDS.agency },
       mainEntity: { "@id": serviceId },
-      hasPart: { "@id": faqId },
       inLanguage: "en-US",
     },
     {
       "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      "@id": SCHEMA_IDS.agency,
-      name: "Billy Lush Insurance",
-      url: SITE_URL,
-      telephone: "+1-323-580-9137",
-      email: FACTS.email,
-      areaServed,
+      ...insuranceAgency(areaServed),
     },
     {
       "@context": "https://schema.org",
@@ -72,7 +81,6 @@ function TownJsonLd({ name, slug }: { name: string; slug: string }) {
       serviceType: PRODUCTS.map((product) => product.title),
       provider: { "@id": SCHEMA_IDS.agency },
       areaServed,
-      hasOfferCatalog: insuranceOfferCatalog(),
     },
     {
       "@context": "https://schema.org",
@@ -81,18 +89,6 @@ function TownJsonLd({ name, slug }: { name: string; slug: string }) {
         { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
         { "@type": "ListItem", position: 2, name: `Life Insurance in ${name}`, item: { "@id": url } },
       ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "@id": faqId,
-      url,
-      isPartOf: { "@id": pageId },
-      mainEntity: FAQS.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a.join(" ") },
-      })),
     },
   ];
   return (

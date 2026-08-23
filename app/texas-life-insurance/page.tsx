@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AcornMark, SiteHeader, SiteFooter } from "../components/Chrome";
-import { SITE_URL, FACTS, CARRIERS, PRODUCTS, FAQS } from "../lib/site";
-import { insuranceOfferCatalog, SCHEMA_IDS, serializeJsonLd } from "../lib/schema";
+import { SITE_URL, FACTS, CARRIERS, PRODUCTS, FAQS, SHARE_IMAGE } from "../lib/site";
+import { insuranceAgency, SCHEMA_IDS, serializeJsonLd } from "../lib/schema";
 
 const url = `${SITE_URL}/texas-life-insurance`;
 
@@ -17,14 +17,24 @@ export const metadata: Metadata = {
     url,
     siteName: "Billy Lush Insurance",
     type: "website",
+    images: [{ url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Texas Life Insurance | Billy Lush, Licensed Agent in TX",
+    description:
+      "Term, whole life, final expense & IUL for Texas families, set up so money reaches them fast and outside probate. Plain talk. TX Lic. #3268220.",
+    images: [SHARE_IMAGE.url],
   },
 };
 
 function TexasJsonLd() {
   const pageId = `${url}#webpage`;
   const serviceId = `${url}#service`;
-  const faqId = `${url}#faq`;
   const areaServed = { "@type": "State", name: "Texas" };
+  /* The agency node is the same canonical object as on the homepage
+     (same @id), scoped here to Texas. No FAQPage here: the FAQ content
+     lives (with its schema) on the homepage only. */
   const data = [
     {
       "@context": "https://schema.org",
@@ -35,18 +45,11 @@ function TexasJsonLd() {
       isPartOf: { "@id": SCHEMA_IDS.website },
       about: { "@id": SCHEMA_IDS.agency },
       mainEntity: { "@id": serviceId },
-      hasPart: { "@id": faqId },
       inLanguage: "en-US",
     },
     {
       "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      "@id": SCHEMA_IDS.agency,
-      name: "Billy Lush Insurance",
-      url: SITE_URL,
-      telephone: "+1-323-580-9137",
-      email: FACTS.email,
-      areaServed,
+      ...insuranceAgency(areaServed),
     },
     {
       "@context": "https://schema.org",
@@ -56,7 +59,6 @@ function TexasJsonLd() {
       serviceType: PRODUCTS.map((product) => product.title),
       provider: { "@id": SCHEMA_IDS.agency },
       areaServed,
-      hasOfferCatalog: insuranceOfferCatalog(),
     },
     {
       "@context": "https://schema.org",
@@ -65,18 +67,6 @@ function TexasJsonLd() {
         { "@type": "ListItem", position: 1, name: "Home", item: { "@id": SITE_URL } },
         { "@type": "ListItem", position: 2, name: "Texas Life Insurance", item: { "@id": url } },
       ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "@id": faqId,
-      url,
-      isPartOf: { "@id": pageId },
-      mainEntity: FAQS.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a.join(" ") },
-      })),
     },
   ];
   return (

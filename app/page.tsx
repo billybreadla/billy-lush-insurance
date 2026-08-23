@@ -5,7 +5,8 @@ import QuoteForm from "./components/QuoteForm";
 import { AcornMark, SiteHeader, SiteFooter } from "./components/Chrome";
 import {
   billyBreadOrganization,
-  insuranceOfferCatalog,
+  insuranceAgency,
+  primaryImageObject,
   SCHEMA_IDS,
   serializeJsonLd,
 } from "./lib/schema";
@@ -15,7 +16,6 @@ import {
   BOOKING_URL,
   SHOWS,
   IMDB_URL,
-  WIKIPEDIA_URL,
   BAKERY,
   CARRIERS,
   TOWNS,
@@ -32,7 +32,6 @@ const TESTIMONIALS: { quote: string; who: string }[] = [
 function JsonLd() {
   const pageId = `${SITE_URL}/#webpage`;
   const faqId = `${SITE_URL}/#faq`;
-  const imageId = `${SITE_URL}/#primaryimage`;
   const data = [
     {
       "@context": "https://schema.org",
@@ -42,62 +41,17 @@ function JsonLd() {
       name: "Billy Lush Insurance | Life Insurance in Newbury Park & the Conejo Valley",
       isPartOf: { "@id": SCHEMA_IDS.website },
       mainEntity: { "@id": SCHEMA_IDS.agency },
-      primaryImageOfPage: { "@id": imageId },
+      primaryImageOfPage: { "@id": SCHEMA_IDS.primaryImage },
       hasPart: { "@id": faqId },
       inLanguage: "en-US",
     },
     {
       "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      "@id": SCHEMA_IDS.agency,
-      name: "Billy Lush Insurance",
-      url: SITE_URL,
-      image: { "@id": imageId },
-      telephone: "+1-323-580-9137",
-      email: FACTS.email,
-      employee: {
-        "@type": "Person",
-        "@id": SCHEMA_IDS.billy,
-        name: "Billy Lush",
-        jobTitle: "Licensed Life Insurance Agent",
-        sameAs: [IMDB_URL, WIKIPEDIA_URL],
-        owns: { "@id": SCHEMA_IDS.billyBread },
-        hasCredential: [
-          {
-            "@type": "EducationalOccupationalCredential",
-            credentialCategory: "license",
-            name: "California Life Insurance Agent License",
-            identifier: FACTS.caLicenseNo,
-            recognizedBy: { "@type": "Organization", name: "California Department of Insurance" },
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            credentialCategory: "license",
-            name: "Texas Life Insurance Agent License",
-            identifier: FACTS.txLicenseNo,
-            recognizedBy: { "@type": "Organization", name: "Texas Department of Insurance" },
-          },
-        ],
-      },
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Newbury Park",
-        addressRegion: "CA",
-        postalCode: "91320",
-        addressCountry: "US",
-      },
-      areaServed: [
+      ...insuranceAgency([
         ...TOWNS.map((t) => ({ "@type": "City", name: `${t.name}, CA` })),
         { "@type": "State", name: "California" },
         { "@type": "State", name: "Texas" },
-      ],
-      knowsAbout: [
-        "Term life insurance",
-        "Whole life insurance",
-        "Final expense insurance",
-        "Indexed universal life insurance",
-      ],
-      hasOfferCatalog: insuranceOfferCatalog(),
+      ]),
     },
     {
       "@context": "https://schema.org",
@@ -105,13 +59,7 @@ function JsonLd() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "ImageObject",
-      "@id": imageId,
-      url: `${SITE_URL}/images/billy-conejo-hills.jpg`,
-      width: { "@type": "QuantitativeValue", value: 1201, unitText: "pixels" },
-      height: { "@type": "QuantitativeValue", value: 1800, unitText: "pixels" },
-      caption:
-        "Billy Lush, licensed life insurance agent, in the hills of the Conejo Valley near Newbury Park",
+      ...primaryImageObject(),
     },
     {
       "@context": "https://schema.org",

@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-/* ————————————————————————————————————————————————
+/* ================================================================
    Ballpark term-life estimator.
    Rough monthly premium for a healthy non-smoker, 20-year level term.
    Numbers are intentionally a RANGE and clearly non-binding; the real
    number comes from the 15-minute conversation. Rates are illustrative
    industry ballparks per $100k of coverage by age band.
-   ———————————————————————————————————————————————— */
+   ================================================================ */
 function monthlyPer100k(age: number): number {
   // illustrative 20-yr level term, healthy non-smoker
   const bands: [number, number][] = [

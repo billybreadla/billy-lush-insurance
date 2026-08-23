@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AcornMark, SiteHeader, SiteFooter } from "../../components/Chrome";
-import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY } from "../../lib/site";
+import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY, SHARE_IMAGE } from "../../lib/site";
 import { ARTICLES, ARTICLE_BY_SLUG } from "../../lib/articles";
 import { billyBreadOrganization, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
@@ -29,6 +29,13 @@ export async function generateMetadata({
       url,
       siteName: "Billy Lush Insurance",
       type: "article",
+      images: [{ url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: a.dek,
+      images: [SHARE_IMAGE.url],
     },
   };
 }
@@ -46,6 +53,7 @@ function ArticleJsonLd({ slug }: { slug: string }) {
       url,
       headline: a.question,
       description: a.dek,
+      image: SHARE_IMAGE.url,
       dateModified: a.updated,
       mainEntityOfPage: { "@id": pageId },
       isPartOf: { "@id": SCHEMA_IDS.website },
