@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Young_Serif, Newsreader, DM_Mono } from "next/font/google";
 import { SCHEMA_IDS, serializeJsonLd } from "./lib/schema";
 import { SITE_URL } from "./lib/site";
@@ -69,6 +70,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <WebSiteJsonLd />
         {children}
+        <Script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "2e1e9ccd50724dc693771937f03f8efb"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
