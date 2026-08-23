@@ -3,7 +3,10 @@
      (app/components/QuoteForm.tsx) rendered through the Next runtime,
      which Netlify's build-time form scanner can't see; this static
      copy declares the form and its fields so submissions are accepted.
-     Field names here MUST match QuoteForm.tsx. -->
+     Field names here MUST match QuoteForm.tsx.
+     Field list (keep identical in QuoteForm.tsx):
+     name, phone, email, interest, besttime, note,
+     consent (hidden, always "yes"), orchard (honeypot). -->
 <html lang="en">
   <head><meta charset="utf-8" /><title>quote-request form definition</title></head>
   <body>
@@ -14,6 +17,7 @@
       <select name="interest"></select>
       <select name="besttime"></select>
       <textarea name="note"></textarea>
+      <input type="hidden" name="consent" value="yes" />
       <input type="text" name="orchard" />
     </form>
   </body>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FACTS, CARRIERS } from "../lib/site";
 
 export function AcornMark({ size = 34 }: { size?: number }) {
@@ -74,7 +75,8 @@ export function SiteFooter() {
           insurance carriers; product availability, features, and terms vary by state and are
           subject to underwriting. This website is for general information only and is not financial,
           tax, or legal advice. &copy; {new Date().getFullYear()} Billy Lush Insurance, Newbury Park,
-          CA.
+          CA. ·{" "}
+          <Link href="/privacy-policy">Privacy Policy</Link> · <Link href="/terms">Terms</Link>
         </p>
       </div>
     </footer>

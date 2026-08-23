@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 /* ————————————————————————————————————————————————
    Lead-capture form → Netlify Forms.
@@ -9,6 +10,9 @@ import { useState } from "react";
    runtime serves pages through functions). This component must
    keep its field names in sync with that file, and it POSTs
    urlencoded data to that static path so the edge intercepts it.
+   Field list (keep identical in public/__forms.html):
+   name, phone, email, interest, besttime, note,
+   consent (checkbox, always "yes"), orchard (honeypot).
    ———————————————————————————————————————————————— */
 
 const INTERESTS = [
@@ -131,13 +135,27 @@ export default function QuoteForm({ phone, phoneHref }: { phone: string; phoneHr
         </div>
       </div>
 
+      <label className="qf-consent" htmlFor="qf-consent">
+        <input id="qf-consent" name="consent" type="checkbox" value="yes" required />
+        <span>
+          I agree that Billy Lush Insurance may contact me by phone, text, or email about my
+          inquiry. Consent is not a condition of purchase.
+        </span>
+      </label>
+
       <div className="qf-actions">
         <button className="btn btn-primary" type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Sending…" : "Send it to Billy"}
         </button>
-        <p className="qf-fine">
-          Goes straight to my inbox, nowhere else. I&rsquo;m the only one who reads it.
-        </p>
+        <div>
+          <p className="qf-fine">
+            Goes straight to my inbox, nowhere else. I&rsquo;m the only one who reads it.
+          </p>
+          <p className="qf-fine">
+            Message and data rates may apply. See the{" "}
+            <Link href="/privacy-policy">Privacy Policy</Link>.
+          </p>
+        </div>
       </div>
 
       {status === "error" && (
