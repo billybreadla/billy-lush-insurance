@@ -1,0 +1,43 @@
+{
+  "slug": "what-executors-should-know-about-life-insurance",
+  "question": "What should an executor know about the deceased's life insurance?",
+  "dek": "Life insurance with a named beneficiary pays that person directly and skips probate, so an executor's real jobs are hunting down policies, pointing families to claims, and avoiding a few expensive traps.",
+  "updated": "2026-08-22",
+  "answer": "Less than you probably fear, and more than most executors realize. A life insurance policy with a living, named beneficiary pays that person directly, outside probate, so in most estates the executor never touches the money at all. Your real jobs are quieter ones: help the family hunt for policies that might exist, point whoever was named toward filing the claim, and steer clear of the traps. The one big exception: if the estate itself was named as beneficiary, the payout gets pulled into probate with everything else.",
+  "sections": [
+    {
+      "h": "Executors and beneficiaries are usually different people",
+      "p": [
+        "One of the most common points of confusion I hear about is the difference between these two roles. An executor (in California court paperwork you will often see personal representative) is the person the court puts in charge of gathering assets, paying legitimate debts, and distributing what is left according to the will. A life insurance beneficiary is simply whoever was named on the policy's form, sometimes decades earlier.",
+        "Those are usually different people, doing different jobs. When a policy names a living person as beneficiary, the insurance company owes that person directly. The money is not an asset of the probate estate, it does not wait for the court, and the executor has no authority over it. If you are serving as executor and you are also named as a beneficiary on some policy, those are two separate hats. Be clear about which one you are wearing before you touch anything."
+      ]
+    },
+    {
+      "h": "The executor's real insurance jobs",
+      "p": [
+        "First job: hunt for policies. Families routinely lose track of coverage, especially small policies bought through an employer years ago or a final expense policy purchased after some life event. My favorite search method costs nothing: pull out twelve months of bank and credit card statements and look for premium debits, small recurring payments to names that sound like insurers. Then check old mail, tax returns, employment records, and any union or alumni paperwork. If nothing turns up after an honest search, accept that a policy may simply not exist. No amount of searching will conjure one that was never bought.",
+        "Second job: point people toward filing. Whoever was named as beneficiary files the claim themselves, and it usually requires surprisingly little: a certified death certificate and the insurer's claim form. I tell executors to treat this as a referral rather than a task to take over. Claims commonly pay within weeks once the paperwork is complete, and that speed matters more than almost anything else happening in the estate."
+      ]
+    },
+    {
+      "h": "The big exception: when the estate itself is the beneficiary",
+      "p": [
+        "Sometimes a policy names 'the estate of...' or nobody at all, or the only named beneficiary died before the insured with no contingent listed behind them. In those cases the death benefit flows into the estate and rides through probate with everything else. In California that means court supervision, fees that come off the top, and a timeline that routinely takes a year or more.",
+        "If you discover this while serving as executor, do not improvise a fix. How proceeds get handled, and who ultimately receives them, is a question for the estate's attorney. This is general information rather than legal advice, and right here the difference genuinely matters."
+      ]
+    },
+    {
+      "h": "The trap that catches good people",
+      "p": [
+        "The most expensive mistake I see executors make is paying estate bills from personal savings before understanding whether they will ever be reimbursed, or paying themselves before the court allows it. Both can create real problems later. Slow down, ask the attorney what can legitimately be paid from estate funds, and keep receipts for everything you spend on the estate's behalf.",
+        "Here is the California picture I see up close, because my wife Anne works in probate real estate: the house sits in probate for a year or more while insurance money arrives within weeks. Families quietly live on the difference. That gap is exactly why the boring little policy someone remembered to name a beneficiary on ends up mattering more than the house everyone is worried about."
+      ]
+    }
+  ],
+  "related": [
+    { "href": "/learn/does-life-insurance-go-through-probate", "label": "Does life insurance go through probate?" },
+    { "href": "/learn/how-long-does-life-insurance-take-to-pay-out", "label": "How long does life insurance take to pay out?" },
+    { "href": "/learn/who-should-i-name-as-beneficiary", "label": "Who should I name as my life insurance beneficiary?" },
+    { "href": "/", "label": "About Billy Lush: local life insurance" }
+  ]
+}

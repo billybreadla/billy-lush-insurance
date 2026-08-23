@@ -1,0 +1,44 @@
+{
+  "slug": "spouse-died-first-steps",
+  "question": "My spouse died: what should I do first about money, the house, and insurance?",
+  "dek": "A plain-talk triage list for the weeks after a spouse dies: which pieces need attention now, which can legally move slowly, and what not to touch until you understand the estate.",
+  "updated": "2026-08-22",
+  "answer": "I am sorry. Now the practical part, because that is usually what people in your position say they need most: very little must happen this week, and knowing that helps. Order several certified death certificates, locate the will and any trust, find any life insurance and file claims right away (those pay fast and outside probate), and keep the mortgage current. Let everything slower, especially probate, move slowly.",
+  "sections": [
+    {
+      "h": "The first two weeks: triage, not heroics",
+      "p": [
+        "Order several certified death certificates, more than feels reasonable. Banks, insurers, pension plans, and the county all want originals, and ordering extra copies now beats making return trips to the vital records office while you are grieving. Many funeral homes will order the first batch for you as part of their arrangements, so ask before standing in line anywhere. Locate the will and any trust documents too. You do not have to interpret them yet; you just need to know where they are.",
+        "Then find any life insurance and file the claims. Look through mail, old statements, and bank records for premium payments to an insurer. Filing takes a certified death certificate and the company's claim form, and payouts commonly arrive within weeks, straight to the named beneficiary, without waiting on any court. Of everything on this list, that is the piece with the best ratio of effort to relief."
+      ]
+    },
+    {
+      "h": "What cannot wait versus what only feels urgent",
+      "p": [
+        "What genuinely cannot wait: keeping the mortgage current, keeping utilities and car insurance active, and any health coverage decisions with real deadlines attached. Missing a house payment during grief is a self-inflicted wound. Lenders do not automatically pause for bereavement unless you call and ask, so call and ask.",
+        "What feels urgent but can almost always wait: closing accounts, settling disagreements with relatives, selling anything, and paying off debts. Grief makes people want to finish things quickly, and unfortunately bill collectors and scammers know it. Nothing legitimate requires you to sign or pay in a panic. Anyone pressuring you otherwise is telling you something useful about themselves.",
+        "One small errand that pays off quietly: get the mail forwarded or held through the post office. Once statements start arriving in your name, you begin seeing which insurers, lenders, and accounts are actually out there, which makes every other step on this list easier."
+      ]
+    },
+    {
+      "h": "What not to do",
+      "p": [
+        "Four things, gently. Do not drain joint accounts blindly before you understand what obligations those funds may be needed for. Do not ignore mail from insurers, even envelopes that look like junk mail; some contain claim forms or deadlines. Do not pay a spouse's debts out of your personal savings before understanding which obligations belong to the estate, because that question has rules behind it rather than guesswork. And do not sign anything under pressure, period. If a document matters, it will still matter after an attorney has looked at it."
+      ]
+    },
+    {
+      "h": "About the house, and about getting help",
+      "p": [
+        "California reality check: if the house was titled in your spouse's name alone, expect probate even though you are the surviving spouse (there are simpler procedures for some smaller estates and certain spousal transfers, but do not assume yours qualifies). Talk to a probate attorney early rather than late. A first consultation is often free or inexpensive, and it will keep you from making moves you cannot undo. I am a life insurance agent, not an attorney, so consider that referral me staying in my lane.",
+        "Here is my vantage point. Widowed families arrive at my wife Anne's probate real estate practice every month, usually months into the fog, trying to sort out a house while the mailbox keeps filling up. It is exactly why I sell the boring product. A modest policy with the right names on it pays within weeks while everything else is still stuck, and that difference changes what the whole first year looks like.",
+        "Last thing, honestly: a fifteen-minute call with me is free. If the most useful thing I can do is point you to the right professional instead of selling you anything, then pointing is exactly what we will do."
+      ]
+    }
+  ],
+  "related": [
+    { "href": "/learn/claim-timeline-vs-probate-timeline", "label": "Life insurance claim vs. California probate: two timelines side by side" },
+    { "href": "/learn/does-life-insurance-go-through-probate", "label": "Does life insurance go through probate?" },
+    { "href": "/learn/how-much-life-insurance-do-i-need", "label": "How much life insurance do I actually need?" },
+    { "href": "/", "label": "About Billy Lush: local life insurance" }
+  ]
+}

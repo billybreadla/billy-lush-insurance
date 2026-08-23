@@ -1,0 +1,45 @@
+{
+  "slug": "claim-timeline-vs-probate-timeline",
+  "question": "How long does a life insurance claim take compared to probate in California?",
+  "dek": "Two clocks start at the same funeral: a life insurance claim commonly pays within weeks to a couple of months, while California probate routinely takes a year or more. Here is how each path unfolds.",
+  "updated": "2026-08-22",
+  "answer": "They are not close. Once the paperwork is complete, a life insurance claim commonly pays within weeks to a couple of months, straight to the named beneficiary, with no court involved. California probate routinely takes a year or more, and often longer when a house has to be sold. Same family, same hard week, two completely different clocks.",
+  "sections": [
+    {
+      "h": "The fast clock: how a claim actually moves",
+      "p": [
+        "The path is short. The beneficiary notifies the insurance company, sends in a certified death certificate and the claim form, and the company verifies that the policy was in force and who is supposed to be paid. Most of the time is paperwork logistics rather than investigation: claims on older policies with clear causes of death and living, reachable beneficiaries usually move along steadily. Delays tend to come from incomplete paperwork, a policy issued recently enough that it is still inside its contestability period, or a beneficiary situation nobody sorted out years earlier.",
+        "Once a claim is approved, payment usually follows promptly as a lump sum. Some companies offer to hold the money in an interest-bearing account instead; beneficiaries can generally decline that and simply take the payment.",
+        "One detail decides everything upstream: who is named on the form. Money going to a living, named person stays on the fast clock. Money with nowhere clean to go jumps tracks entirely."
+      ]
+    },
+    {
+      "h": "The slow clock: how probate actually moves",
+      "p": [
+        "Probate is a court supervised line of steps, and each one takes its own time: filing the petition and getting a hearing date, formally notifying creditors and waiting out the window the law gives them to come forward, managing or eventually selling property (in California often with a court confirmation step), and a final accounting before anything distributes to heirs. No single step is unreasonable. Stacked together, a year passes easily, and contested cases or complicated property stretch well beyond that.",
+        "This is general information rather than legal advice, and every case varies. But the shape holds: probate is measured in seasons, while claims are measured in weeks. A few practical notes people wish someone had mentioned earlier: probate needs a personal representative willing to serve, an attorney is effectively required for most full probates in California, and much of the delay is simply waiting for hearings to find room on the court's calendar."
+      ]
+    },
+    {
+      "h": "The gap between the clocks is where families get hurt",
+      "p": [
+        "Here is the problem: the expenses do not care which clock is running. The funeral bill comes due within days. The mortgage comes due monthly. Insurance on a vacant house, property taxes, utilities; all of it keeps billing on the fast clock while most of the estate sits on the slow one.",
+        "I see the aftermath regularly because my wife Anne works in probate real estate. The families doing best are rarely the ones with the biggest estates. They are the ones with money arriving early, which is what lets them keep the house paid and the lights on while the court does its slow work, instead of watching a lender start making decisions for them.",
+        "It is also why funerals so often end up on a credit card and get paid back weeks later when the insurance check finally lands. The money existed all along; it just arrived after the fast clock had already run out."
+      ]
+    },
+    {
+      "h": "Which track the money takes gets chosen decades earlier",
+      "p": [
+        "The uncomfortable, liberating truth is that none of this is decided at death. It is decided by beneficiary designation forms: naming a real person as primary, naming a contingent behind them, and updating both after marriages, divorces, and deaths. A quarter hour of paperwork determines whether cash reaches your family within weeks or gets locked into probate for a year or more. It is the highest-leverage fifteen minutes in an entire estate plan, and it costs nothing: updating a designation is typically a short form with the insurer, not a new policy.",
+        "That is the whole idea behind the work I do: making sure money shows up while everything else is stuck. If you are not sure which track your family's money would take, finding out costs nothing, and now is a much better time than later."
+      ]
+    }
+  ],
+  "related": [
+    { "href": "/learn/how-long-does-life-insurance-take-to-pay-out", "label": "How long does life insurance take to pay out?" },
+    { "href": "/learn/does-life-insurance-go-through-probate", "label": "Does life insurance go through probate?" },
+    { "href": "/learn/what-is-a-contingent-beneficiary", "label": "What is a contingent beneficiary, and why does it matter?" },
+    { "href": "/", "label": "About Billy Lush: local life insurance" }
+  ]
+}
