@@ -1,20 +1,26 @@
-name: Weekly Learn article
+name: Learn article draft
 
-# Writes one new /learn article each week in Billy's voice and pushes it to main.
-# Netlify auto-deploys main to billylushinsurance.com. Needs repo secret
-# ANTHROPIC_API_KEY. Run manually anytime from the Actions tab ("Run workflow").
+# Picks the next question from the backlog in generate-article.mjs, generates
+# an article draft in Billy's voice, and saves it to content-drafts/ on main.
+# Nothing in app/ changes, so nothing publishes. Billy reviews the draft and
+# promotes it by moving the article object into app/lib/articles.ts (see
+# CLAUDE.md). Netlify auto-deploys main. Needs repo secret ANTHROPIC_API_KEY.
+# Run manually anytime from the Actions tab ("Run workflow").
 
 on:
   schedule:
-    # Tuesdays 16:00 UTC = 9:00 AM Pacific (PDT). (In winter PST it runs at 8am.)
-    - cron: "0 16 * * 2"
+    # First Tuesday of the month: day of month 1 to 7 that falls on Tuesday
+    # (weekday 2). 16:00 UTC = 9:00 AM Pacific (PDT), 8:00 AM in winter (PST).
+    - cron: "0 16 1-7 * 2"
+    # Third Tuesday of the month: day of month 15 to 21 that falls on Tuesday.
+    - cron: "0 16 15-21 * 2"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
-  write-article:
+  draft-article:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,19 +29,22 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generate the article
+      - name: Generate the draft article
+        id: generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node .github/scripts/generate-article.mjs
 
-      - name: Commit and push
+      - name: Commit and push the draft
+        env:
+          SLUG: ${{ steps.generate.outputs.slug }}
         run: |
-          if git diff --quiet -- app/lib/articles.ts; then
-            echo "No new article this run; nothing to commit."
+          if [ -z "$(git status --porcelain content-drafts)" ]; then
+            echo "No new draft this run; nothing to commit."
             exit 0
           fi
           git config user.name "billy-lush-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add app/lib/articles.ts
-          git commit -m "Add weekly Learn article (automated)"
+          git add content-drafts
+          git commit -m "Draft Learn article: $SLUG (review needed)"
           git push
