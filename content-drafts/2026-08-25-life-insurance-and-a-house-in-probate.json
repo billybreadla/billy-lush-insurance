@@ -1,0 +1,44 @@
+{
+  "slug": "life-insurance-and-a-house-in-probate",
+  "question": "Life insurance and a house in probate: how the pieces fit",
+  "dek": "When a house gets stuck in probate for months, a life insurance payout can land in days and keep the family afloat until the estate settles.",
+  "updated": "2026-08-25",
+  "answer": "Life insurance proceeds go directly to the named beneficiary and bypass probate entirely, often arriving within days to a few weeks after a claim is filed. A house, on the other hand, is a probate asset when there is no trust or joint tenancy, and in California that process can run anywhere from nine months to well over a year. That gap, fast cash on one side and a frozen asset on the other, is exactly where a well-chosen life insurance policy earns its keep. The payout can carry the mortgage, the property taxes, the attorney fees, and the day-to-day bills while the estate works its way through the court.",
+  "sections": [
+    {
+      "h": "Why the house gets stuck while the insurance check arrives fast",
+      "p": [
+        "When someone dies owning a house in their name alone, that house cannot be sold, refinanced, or transferred until the probate court sorts out who legally inherits it. In California, a full probate can take a year or longer, and the costs, court filing fees, statutory attorney fees, executor compensation, all come out of the estate before a single heir sees a dollar. My wife works in probate real estate and she watches families navigate this regularly. The house just sits there, but the mortgage payment, the HOA dues, and the property tax bills keep showing up every month like clockwork.",
+        "Life insurance is built differently. Because you named a beneficiary directly on the policy, the payout never touches the estate at all. The insurance company sends the money to your beneficiary, not to the court, not to the executor. Most carriers process a straightforward claim in a matter of days to a few weeks. That speed is not an accident. It is the core design feature that makes life insurance useful in exactly this kind of situation."
+      ]
+    },
+    {
+      "h": "Using the payout to carry the house through probate",
+      "p": [
+        "If your family inherits a house but no liquid money, they face a hard choice: keep paying the mortgage and expenses out of their own pocket while waiting for probate to close, or risk falling behind and damaging the asset everyone is waiting to inherit. A life insurance payout gives them a third option. The beneficiary gets a lump sum that can cover the mortgage and carrying costs for as long as the probate runs. In California, where home values are high and probate timelines are long, that bridge can matter a great deal.",
+        "How much coverage makes sense depends on the specific situation. A rough starting point is to add up the monthly housing costs, mortgage, taxes, insurance, HOA if there is one, and multiply by the number of months the probate is likely to run. Layering in final expenses, legal fees, and any debt the estate will owe gives you a clearer picture. You do not need a policy designed only for this purpose. Often a policy the deceased already held for income replacement does the job, as long as the beneficiary designation is clean and current."
+      ]
+    },
+    {
+      "h": "The details that can break the plan",
+      "p": [
+        "Even a solid policy fails to deliver if the beneficiary designation is wrong. Naming the estate as beneficiary, or leaving the field blank, sends the payout into probate right along with the house. That erases the whole advantage. Naming a minor child creates a different problem because minors cannot receive a large sum directly in California without court involvement. A trust or a custodial arrangement handles that, but it requires planning ahead. These are the things worth getting right while everyone is still around to make changes.",
+        "The other thing I see people overlook is the executor's burden. Serving as executor of an estate that includes real property is a lot of work, and it can stretch on for a long time. A life insurance payout does not go to the executor, it goes to the beneficiary. But if the same person is wearing both hats, having liquid funds available makes the whole process less brutal. Probate is not something most families expect to deal with for a year or more. Life insurance cannot shorten the court timeline, but it can make that timeline survivable."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/how-long-does-life-insurance-take-to-pay-out",
+      "label": "How long does life insurance take to pay out?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
