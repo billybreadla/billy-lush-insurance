@@ -1,0 +1,44 @@
+{
+  "slug": "beneficiary-died-before-me",
+  "question": "What happens if your beneficiary dies before you do",
+  "dek": "If your named beneficiary dies before you do, the payout could get stuck in probate unless you have a contingent beneficiary on file.",
+  "updated": "2026-09-01",
+  "answer": "If your primary beneficiary dies before you and you have no contingent beneficiary named, the life insurance proceeds will likely fall into your estate and go through probate. That means a court process, potential delays of months or longer, legal fees, and your family getting money later than they need it. The fix is straightforward: name a contingent beneficiary now, and review your beneficiaries any time your life changes.",
+  "sections": [
+    {
+      "h": "What actually happens when a primary beneficiary predeceases you",
+      "p": [
+        "When you die, the insurance company looks for a living primary beneficiary to pay. If that person is already gone and you never updated your policy, the insurer has no one to send the money to. At that point, the proceeds almost always default to your estate. Once money lands in your estate, it loses the biggest advantage life insurance has over almost every other asset: the ability to pass directly to your loved ones without going through probate.",
+        "My wife works in probate real estate, so I have watched this play out up close. Probate in California can take anywhere from nine months to several years depending on the size of the estate and whether anyone contests anything. Court costs, executor fees, and attorney fees can eat up a meaningful portion of what you intended to leave behind. A death benefit that could have been in your family's hands within a few weeks instead gets frozen while the court sorts things out."
+      ]
+    },
+    {
+      "h": "What a contingent beneficiary is and why it solves the problem",
+      "p": [
+        "A contingent beneficiary is simply your backup. If your primary beneficiary is alive when you die, the contingent beneficiary gets nothing and may never even know they were listed. But if your primary beneficiary has already passed, the contingent beneficiary steps up and receives the payout directly, bypassing probate entirely. You can name more than one contingent beneficiary and split the percentage any way you like.",
+        "Naming a contingent costs nothing and takes about five minutes on a beneficiary change form. Despite that, a surprising number of people skip it, often because they filled out the original paperwork quickly and never went back. I tell people to treat their beneficiary designations the same way they treat a smoke detector: set it up right the first time, and check it every year or two. Big life events like a marriage, a divorce, a death in the family, or the birth of a child are all good reasons to pull out your policy and take a look."
+      ]
+    },
+    {
+      "h": "A few California and Texas specifics worth knowing",
+      "p": [
+        "In California, if life insurance proceeds do fall into your estate, they become subject to California probate rules. The state uses a statutory fee schedule for executor and attorney compensation, and those fees are based on the gross value of the estate, not the net. That means a large death benefit landing in probate can generate significant fees before a single dollar reaches your family.",
+        "Texas has its own probate process, and while Texas is generally considered a simpler probate state than California, defaulting your life insurance to your estate still creates delay and cost that a properly named contingent beneficiary would have avoided entirely. In either state, the solution is the same: keep your beneficiary designations current. If you are unsure whether your policy has a contingent beneficiary listed, call your insurance company and ask. It is a quick question and worth asking today."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/what-is-a-contingent-beneficiary",
+      "label": "What is a contingent beneficiary, and why does it matter?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
