@@ -1,0 +1,44 @@
+{
+  "slug": "beneficiary-mistakes-probate",
+  "question": "Beneficiary mistakes that accidentally send money through probate",
+  "dek": "Three common beneficiary mistakes that accidentally route your life insurance payout through probate, and how to fix them before it is too late.",
+  "updated": "2026-09-02",
+  "answer": "Life insurance is designed to skip probate entirely, paying your named beneficiary directly within days or weeks of a claim. But certain beneficiary mistakes erase that advantage completely, pulling the money into the court process and freezing it for months or even years. The three most common traps are naming your estate as beneficiary, naming a minor child outright, and leaving an ex-spouse on an old policy you forgot to update. All three are easy to fix while you are alive.",
+  "sections": [
+    {
+      "h": "Naming your estate as beneficiary",
+      "p": [
+        "When no living beneficiary is named, or when someone literally types 'my estate' into the beneficiary field, the insurance company has nowhere else to send the money except to the estate. At that point the payout becomes a probate asset. In California, probate is a Superior Court process that is public, slow, and expensive. Attorney and executor fees are set by statute, calculated as a percentage of the gross estate value, not the net. A policy that was supposed to hand your family a clean lump sum within weeks can instead sit locked up for a year or longer while the court sorts things out. My wife works in probate real estate and she sees this regularly. Families who thought they were covered find themselves waiting, and sometimes selling assets at a discount just to cover living expenses in the meantime.",
+        "The fix is straightforward. Name a real, living person as your primary beneficiary, and name at least one contingent beneficiary as a backup. If you want to leave money to a trust, name the trust directly rather than naming the estate. That keeps the payout out of the court system entirely."
+      ]
+    },
+    {
+      "h": "Naming a minor child directly",
+      "p": [
+        "Naming a child is a loving instinct, but insurance companies cannot legally hand a large sum of money to someone under eighteen. In California, if a minor inherits more than a relatively small amount (the threshold is set by state law and can change, so verify the current figure with an attorney), a court must appoint a guardian of the estate to manage those funds. That appointment goes through probate, which again means court fees, public filings, and delays. The guardian also has to report to the court periodically until the child turns eighteen, at which point every remaining dollar is handed over to them outright, whether they are ready for it or not.",
+        "The cleaner path is to create a trust, name the trust as beneficiary, and name a trustee you trust to manage the money according to the terms you write. The trust can specify things like releasing funds for education, releasing a portion at age twenty-five, and so on. This does not have to be complicated or expensive to set up, but it does require working with an estate-planning attorney. I am not an attorney and I do not draft trusts, but I can tell you that the policy side of this setup is simple once the trust document exists."
+      ]
+    },
+    {
+      "h": "Leaving an ex-spouse on an old policy",
+      "p": [
+        "This one surprises people. Federal law (ERISA) and state laws interact in ways that are not always consistent, and California courts have dealt with plenty of disputes over outdated beneficiary designations after a divorce. In some cases, a divorce decree awards the life insurance benefit to an ex-spouse, and the policyholder never updates the form. In other cases the policyholder assumes the divorce automatically removed the ex, but it did not. The result is often a contested claim that ties the money up in litigation or probate for a long time.",
+        "The straightforward fix is to review your beneficiary designations any time your life changes, which includes divorce, remarriage, the birth of a child, or the death of a previous beneficiary. The beneficiary form on file with the insurance company controls, not your will and not your divorce decree in most cases. A fifteen-minute review of what your policy actually says can prevent years of problems for the people you are trying to protect. If you are not sure what your policy says right now, pull it out today and look."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/who-should-i-name-as-beneficiary",
+      "label": "Who should I name as my life insurance beneficiary?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
