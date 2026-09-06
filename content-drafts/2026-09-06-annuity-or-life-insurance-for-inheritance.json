@@ -1,0 +1,44 @@
+{
+  "slug": "annuity-or-life-insurance-for-inheritance",
+  "question": "Annuity or life insurance for leaving money to your kids?",
+  "dek": "An honest side-by-side look at annuities and life insurance for parents who want to leave money to their kids, covering taxes, probate, and who controls what happens after you die.",
+  "updated": "2026-09-06",
+  "answer": "If your main goal is leaving a guaranteed, tax-free lump sum to your kids the moment you die, life insurance is usually the cleaner tool. Annuities are built primarily for retirement income, and while they can pass money to heirs, the tax treatment and control mechanics work very differently. That said, neither product is automatically right for everyone, and some families end up using both for different jobs. The honest answer depends on your age, health, and what problem you are actually trying to solve.",
+  "sections": [
+    {
+      "h": "What each product is actually designed to do",
+      "p": [
+        "Life insurance is built around one core promise: if you die, a named beneficiary gets a set amount of money, usually income-tax-free, usually without going through probate. That last part matters a lot to me because my wife works in probate real estate and I have watched families wait six months to over a year just to access money that was already meant for them. A properly named life insurance beneficiary skips that line entirely. The death benefit goes directly to your kids, often within weeks of filing a claim.",
+        "An annuity works the other way around. You hand an insurance company a lump sum (or a series of payments) and they promise to pay you income, either for a set number of years or for the rest of your life. Annuities are genuinely useful for not outliving your money. They were not designed primarily as an inheritance tool, even though some types do pass a remaining balance to heirs when you die."
+      ]
+    },
+    {
+      "h": "The tax and control tradeoffs are real and worth understanding",
+      "p": [
+        "When your kids receive a life insurance death benefit, they generally owe no federal income tax on it. That is a meaningful advantage. When they inherit the remaining value of an annuity, the picture is different. The growth inside an annuity is tax-deferred while you are alive, but heirs typically owe ordinary income tax on the earnings portion when they receive distributions after your death. Depending on the size of the annuity and your kids' own income, that tax bill can be significant. There are also required distribution rules that force heirs to take the money out within a certain window, which can push them into a higher bracket in years they would rather not.",
+        "Control is the other big tradeoff. With life insurance you set a beneficiary, you choose the death benefit amount, and the mechanics are straightforward. With certain annuities, particularly ones with income riders you have been drawing on, the payout your heirs receive may be less than you expected because the income payments you took during your lifetime reduced what is left over. Some annuities offer enhanced death benefit riders that protect the full value for heirs, but those riders cost extra and add complexity. My honest advice: before you buy any annuity with the stated goal of leaving money to your kids, read the death benefit section carefully and ask specifically what your heirs will actually receive and how it will be taxed."
+      ]
+    },
+    {
+      "h": "When one makes more sense than the other, and when both do",
+      "p": [
+        "If you are relatively healthy and the primary goal is a clean, tax-free transfer to your kids at death, life insurance wins that comparison almost every time. Term life is the most affordable way to put a large death benefit in place while your kids are young and financially dependent. Permanent life insurance costs more but can work well for people who want lifelong coverage or have already maxed out other tax-advantaged accounts and want additional tax-sheltered growth. Either way, keeping a named beneficiary current means the money moves outside of probate in California, which can save your family real time and legal fees.",
+        "Annuities make more sense when your own retirement income security is the problem you are solving, not wealth transfer. If you are worried about outliving your savings, an annuity can provide a floor of guaranteed income so you do not have to draw down assets you were hoping to leave behind. In that framing, the annuity serves you while you are alive, and life insurance handles the inheritance piece separately. Some families with more complex situations use both, but I always encourage people to be clear about which tool is doing which job so they are not paying for features they do not need."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/is-a-life-insurance-payout-taxable",
+      "label": "Is a life insurance payout taxable?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
