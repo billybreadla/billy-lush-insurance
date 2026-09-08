@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: learn-article-draft
+  group: learn-article-main-writes
   cancel-in-progress: false
 
 jobs:

@@ -1,0 +1,55 @@
+name: Learn article auto-promote
+
+# Every Tuesday, promotes the oldest queued draft in content-drafts/ straight
+# into app/lib/articles.ts and pushes to main, publishing it on the next
+# Netlify build. No human review step; see CLAUDE.md for the full flow and
+# .github/scripts/promote-article.mjs for the promotion logic.
+# Run manually anytime from the Actions tab ("Run workflow").
+
+on:
+  schedule:
+    # Every Tuesday. 16:00 UTC = 9:00 AM Pacific (PDT), 8:00 AM in winter (PST).
+    - cron: "0 16 * * 2"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: learn-article-main-writes
+  cancel-in-progress: false
+
+jobs:
+  promote-article:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Promote the oldest queued draft
+        id: promote
+        run: node .github/scripts/promote-article.mjs
+
+      - name: Commit and push the promotion
+        if: steps.promote.outputs.promoted == 'true'
+        env:
+          SLUG: ${{ steps.promote.outputs.slug }}
+        run: |
+          git config user.name "billy-lush-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add app/lib/articles.ts content-drafts
+          git commit -m "Auto-promote Learn article: $SLUG"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, retrying with rebase ($i/5)..."
+            git fetch origin main
+            git rebase origin/main
+            sleep $((i * 3))
+          done
+          echo "Failed to push after retries."
+          exit 1
