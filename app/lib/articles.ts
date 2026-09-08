@@ -344,6 +344,168 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "claim-timeline-vs-probate-timeline",
+    question: "How long does a life insurance claim take compared to probate in California?",
+    dek: "Two clocks start at the same funeral: a life insurance claim commonly pays within weeks to a couple of months, while California probate routinely takes a year or more. Here is how each path unfolds.",
+    updated: "2026-09-08",
+    answer:
+      "They are not close. Once the paperwork is complete, a life insurance claim commonly pays within weeks to a couple of months, straight to the named beneficiary, with no court involved. California probate routinely takes a year or more, and often longer when a house has to be sold. Same family, same hard week, two completely different clocks.",
+    sections: [
+      {
+        h: "The fast clock: how a claim actually moves",
+        p: [
+          "The path is short. The beneficiary notifies the insurance company, sends in a certified death certificate and the claim form, and the company verifies that the policy was in force and who is supposed to be paid. Most of the time is paperwork logistics rather than investigation: claims on older policies with clear causes of death and living, reachable beneficiaries usually move along steadily. Delays tend to come from incomplete paperwork, a policy issued recently enough that it is still inside its contestability period, or a beneficiary situation nobody sorted out years earlier.",
+          "Once a claim is approved, payment usually follows promptly as a lump sum. Some companies offer to hold the money in an interest-bearing account instead; beneficiaries can generally decline that and simply take the payment.",
+          "One detail decides everything upstream: who is named on the form. Money going to a living, named person stays on the fast clock. Money with nowhere clean to go jumps tracks entirely.",
+        ],
+      },
+      {
+        h: "The slow clock: how probate actually moves",
+        p: [
+          "Probate is a court supervised line of steps, and each one takes its own time: filing the petition and getting a hearing date, formally notifying creditors and waiting out the window the law gives them to come forward, managing or eventually selling property (in California often with a court confirmation step), and a final accounting before anything distributes to heirs. No single step is unreasonable. Stacked together, a year passes easily, and contested cases or complicated property stretch well beyond that.",
+          "This is general information rather than legal advice, and every case varies. But the shape holds: probate is measured in seasons, while claims are measured in weeks. A few practical notes people wish someone had mentioned earlier: probate needs a personal representative willing to serve, an attorney is effectively required for most full probates in California, and much of the delay is simply waiting for hearings to find room on the court's calendar.",
+        ],
+      },
+      {
+        h: "The gap between the clocks is where families get hurt",
+        p: [
+          "Here is the problem: the expenses do not care which clock is running. The funeral bill comes due within days. The mortgage comes due monthly. Insurance on a vacant house, property taxes, utilities; all of it keeps billing on the fast clock while most of the estate sits on the slow one.",
+          "I see the aftermath regularly because my wife Anne works in probate real estate. The families doing best are rarely the ones with the biggest estates. They are the ones with money arriving early, which is what lets them keep the house paid and the lights on while the court does its slow work, instead of watching a lender start making decisions for them.",
+          "It is also why funerals so often end up on a credit card and get paid back weeks later when the insurance check finally lands. The money existed all along; it just arrived after the fast clock had already run out.",
+        ],
+      },
+      {
+        h: "Which track the money takes gets chosen decades earlier",
+        p: [
+          "The uncomfortable, liberating truth is that none of this is decided at death. It is decided by beneficiary designation forms: naming a real person as primary, naming a contingent behind them, and updating both after marriages, divorces, and deaths. A quarter hour of paperwork determines whether cash reaches your family within weeks or gets locked into probate for a year or more. It is the highest-leverage fifteen minutes in an entire estate plan, and it costs nothing: updating a designation is typically a short form with the insurer, not a new policy.",
+          "That is the whole idea behind the work I do: making sure money shows up while everything else is stuck. If you are not sure which track your family's money would take, finding out costs nothing, and now is a much better time than later.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/learn/how-long-does-life-insurance-take-to-pay-out", label: "How long does life insurance take to pay out?" },
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/what-is-a-contingent-beneficiary", label: "What is a contingent beneficiary, and why does it matter?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
+  {
+    slug: "beneficiary-mistakes-probate",
+    question: "Beneficiary mistakes that accidentally send money through probate",
+    dek: "Three common beneficiary mistakes that accidentally route your life insurance payout through probate, and how to fix them before it is too late.",
+    updated: "2026-09-08",
+    answer:
+      "Life insurance is designed to skip probate entirely, paying your named beneficiary directly within days or weeks of a claim. But certain beneficiary mistakes erase that advantage completely, pulling the money into the court process and freezing it for months or even years. The three most common traps are naming your estate as beneficiary, naming a minor child outright, and leaving an ex-spouse on an old policy you forgot to update. All three are easy to fix while you are alive.",
+    sections: [
+      {
+        h: "Naming your estate as beneficiary",
+        p: [
+          "When no living beneficiary is named, or when someone literally types 'my estate' into the beneficiary field, the insurance company has nowhere else to send the money except to the estate. At that point the payout becomes a probate asset. In California, probate is a Superior Court process that is public, slow, and expensive. Attorney and executor fees are set by statute, calculated as a percentage of the gross estate value, not the net. A policy that was supposed to hand your family a clean lump sum within weeks can instead sit locked up for a year or longer while the court sorts things out. My wife works in probate real estate and she sees this regularly. Families who thought they were covered find themselves waiting, and sometimes selling assets at a discount just to cover living expenses in the meantime.",
+          "The fix is straightforward. Name a real, living person as your primary beneficiary, and name at least one contingent beneficiary as a backup. If you want to leave money to a trust, name the trust directly rather than naming the estate. That keeps the payout out of the court system entirely.",
+        ],
+      },
+      {
+        h: "Naming a minor child directly",
+        p: [
+          "Naming a child is a loving instinct, but insurance companies cannot legally hand a large sum of money to someone under eighteen. In California, if a minor inherits more than a relatively small amount (the threshold is set by state law and can change, so verify the current figure with an attorney), a court must appoint a guardian of the estate to manage those funds. That appointment goes through probate, which again means court fees, public filings, and delays. The guardian also has to report to the court periodically until the child turns eighteen, at which point every remaining dollar is handed over to them outright, whether they are ready for it or not.",
+          "The cleaner path is to create a trust, name the trust as beneficiary, and name a trustee you trust to manage the money according to the terms you write. The trust can specify things like releasing funds for education, releasing a portion at age twenty-five, and so on. This does not have to be complicated or expensive to set up, but it does require working with an estate-planning attorney. I am not an attorney and I do not draft trusts, but I can tell you that the policy side of this setup is simple once the trust document exists.",
+        ],
+      },
+      {
+        h: "Leaving an ex-spouse on an old policy",
+        p: [
+          "This one surprises people. Federal law (ERISA) and state laws interact in ways that are not always consistent, and California courts have dealt with plenty of disputes over outdated beneficiary designations after a divorce. In some cases, a divorce decree awards the life insurance benefit to an ex-spouse, and the policyholder never updates the form. In other cases the policyholder assumes the divorce automatically removed the ex, but it did not. The result is often a contested claim that ties the money up in litigation or probate for a long time.",
+          "The straightforward fix is to review your beneficiary designations any time your life changes, which includes divorce, remarriage, the birth of a child, or the death of a previous beneficiary. The beneficiary form on file with the insurance company controls, not your will and not your divorce decree in most cases. A fifteen-minute review of what your policy actually says can prevent years of problems for the people you are trying to protect. If you are not sure what your policy says right now, pull it out today and look.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/who-should-i-name-as-beneficiary", label: "Who should I name as my life insurance beneficiary?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
+  {
+    slug: "what-executors-should-know-about-life-insurance",
+    question: "What should an executor know about the deceased's life insurance?",
+    dek: "Life insurance with a named beneficiary pays that person directly and skips probate, so an executor's real jobs are hunting down policies, pointing families to claims, and avoiding a few expensive traps.",
+    updated: "2026-09-08",
+    answer:
+      "Less than you probably fear, and more than most executors realize. A life insurance policy with a living, named beneficiary pays that person directly, outside probate, so in most estates the executor never touches the money at all. Your real jobs are quieter ones: help the family hunt for policies that might exist, point whoever was named toward filing the claim, and steer clear of the traps. The one big exception: if the estate itself was named as beneficiary, the payout gets pulled into probate with everything else.",
+    sections: [
+      {
+        h: "Executors and beneficiaries are usually different people",
+        p: [
+          "One of the most common points of confusion I hear about is the difference between these two roles. An executor (in California court paperwork you will often see personal representative) is the person the court puts in charge of gathering assets, paying legitimate debts, and distributing what is left according to the will. A life insurance beneficiary is simply whoever was named on the policy's form, sometimes decades earlier.",
+          "Those are usually different people, doing different jobs. When a policy names a living person as beneficiary, the insurance company owes that person directly. The money is not an asset of the probate estate, it does not wait for the court, and the executor has no authority over it. If you are serving as executor and you are also named as a beneficiary on some policy, those are two separate hats. Be clear about which one you are wearing before you touch anything.",
+        ],
+      },
+      {
+        h: "The executor's real insurance jobs",
+        p: [
+          "First job: hunt for policies. Families routinely lose track of coverage, especially small policies bought through an employer years ago or a final expense policy purchased after some life event. My favorite search method costs nothing: pull out twelve months of bank and credit card statements and look for premium debits, small recurring payments to names that sound like insurers. Then check old mail, tax returns, employment records, and any union or alumni paperwork. If nothing turns up after an honest search, accept that a policy may simply not exist. No amount of searching will conjure one that was never bought.",
+          "Second job: point people toward filing. Whoever was named as beneficiary files the claim themselves, and it usually requires surprisingly little: a certified death certificate and the insurer's claim form. I tell executors to treat this as a referral rather than a task to take over. Claims commonly pay within weeks once the paperwork is complete, and that speed matters more than almost anything else happening in the estate.",
+        ],
+      },
+      {
+        h: "The big exception: when the estate itself is the beneficiary",
+        p: [
+          "Sometimes a policy names 'the estate of...' or nobody at all, or the only named beneficiary died before the insured with no contingent listed behind them. In those cases the death benefit flows into the estate and rides through probate with everything else. In California that means court supervision, fees that come off the top, and a timeline that routinely takes a year or more.",
+          "If you discover this while serving as executor, do not improvise a fix. How proceeds get handled, and who ultimately receives them, is a question for the estate's attorney. This is general information rather than legal advice, and right here the difference genuinely matters.",
+        ],
+      },
+      {
+        h: "The trap that catches good people",
+        p: [
+          "The most expensive mistake I see executors make is paying estate bills from personal savings before understanding whether they will ever be reimbursed, or paying themselves before the court allows it. Both can create real problems later. Slow down, ask the attorney what can legitimately be paid from estate funds, and keep receipts for everything you spend on the estate's behalf.",
+          "Here is the California picture I see up close, because my wife Anne works in probate real estate: the house sits in probate for a year or more while insurance money arrives within weeks. Families quietly live on the difference. That gap is exactly why the boring little policy someone remembered to name a beneficiary on ends up mattering more than the house everyone is worried about.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/how-long-does-life-insurance-take-to-pay-out", label: "How long does life insurance take to pay out?" },
+      { href: "/learn/who-should-i-name-as-beneficiary", label: "Who should I name as my life insurance beneficiary?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
+  {
+    slug: "life-insurance-and-a-house-in-probate",
+    question: "Life insurance and a house in probate: how the pieces fit",
+    dek: "When a house gets stuck in probate for months, a life insurance payout can land in days and keep the family afloat until the estate settles.",
+    updated: "2026-09-08",
+    answer:
+      "Life insurance proceeds go directly to the named beneficiary and bypass probate entirely, often arriving within days to a few weeks after a claim is filed. A house, on the other hand, is a probate asset when there is no trust or joint tenancy, and in California that process can run anywhere from nine months to well over a year. That gap, fast cash on one side and a frozen asset on the other, is exactly where a well-chosen life insurance policy earns its keep. The payout can carry the mortgage, the property taxes, the attorney fees, and the day-to-day bills while the estate works its way through the court.",
+    sections: [
+      {
+        h: "Why the house gets stuck while the insurance check arrives fast",
+        p: [
+          "When someone dies owning a house in their name alone, that house cannot be sold, refinanced, or transferred until the probate court sorts out who legally inherits it. In California, a full probate can take a year or longer, and the costs, court filing fees, statutory attorney fees, executor compensation, all come out of the estate before a single heir sees a dollar. My wife works in probate real estate and she watches families navigate this regularly. The house just sits there, but the mortgage payment, the HOA dues, and the property tax bills keep showing up every month like clockwork.",
+          "Life insurance is built differently. Because you named a beneficiary directly on the policy, the payout never touches the estate at all. The insurance company sends the money to your beneficiary, not to the court, not to the executor. Most carriers process a straightforward claim in a matter of days to a few weeks. That speed is not an accident. It is the core design feature that makes life insurance useful in exactly this kind of situation.",
+        ],
+      },
+      {
+        h: "Using the payout to carry the house through probate",
+        p: [
+          "If your family inherits a house but no liquid money, they face a hard choice: keep paying the mortgage and expenses out of their own pocket while waiting for probate to close, or risk falling behind and damaging the asset everyone is waiting to inherit. A life insurance payout gives them a third option. The beneficiary gets a lump sum that can cover the mortgage and carrying costs for as long as the probate runs. In California, where home values are high and probate timelines are long, that bridge can matter a great deal.",
+          "How much coverage makes sense depends on the specific situation. A rough starting point is to add up the monthly housing costs, mortgage, taxes, insurance, HOA if there is one, and multiply by the number of months the probate is likely to run. Layering in final expenses, legal fees, and any debt the estate will owe gives you a clearer picture. You do not need a policy designed only for this purpose. Often a policy the deceased already held for income replacement does the job, as long as the beneficiary designation is clean and current.",
+        ],
+      },
+      {
+        h: "The details that can break the plan",
+        p: [
+          "Even a solid policy fails to deliver if the beneficiary designation is wrong. Naming the estate as beneficiary, or leaving the field blank, sends the payout into probate right along with the house. That erases the whole advantage. Naming a minor child creates a different problem because minors cannot receive a large sum directly in California without court involvement. A trust or a custodial arrangement handles that, but it requires planning ahead. These are the things worth getting right while everyone is still around to make changes.",
+          "The other thing I see people overlook is the executor's burden. Serving as executor of an estate that includes real property is a lot of work, and it can stretch on for a long time. A life insurance payout does not go to the executor, it goes to the beneficiary. But if the same person is wearing both hats, having liquid funds available makes the whole process less brutal. Probate is not something most families expect to deal with for a year or more. Life insurance cannot shorten the court timeline, but it can make that timeline survivable.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/how-long-does-life-insurance-take-to-pay-out", label: "How long does life insurance take to pay out?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
