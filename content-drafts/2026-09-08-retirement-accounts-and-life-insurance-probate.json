@@ -1,0 +1,37 @@
+{
+  "slug": "retirement-accounts-and-life-insurance-probate",
+  "question": "Do retirement accounts and life insurance avoid probate?",
+  "dek": "Retirement accounts and life insurance both skip probate when a valid beneficiary is named, but a missing or outdated designation can send the money straight into the estate and the courthouse.",
+  "updated": "2026-09-08",
+  "answer": "Yes, retirement accounts (like IRAs and 401(k)s) and life insurance policies both pass outside of probate, as long as you have named a living beneficiary. The asset goes directly from the institution to the person you named, usually within days or weeks, without a judge or probate attorney involved. The catch is that the beneficiary designation has to be current, complete, and not pointing to a deceased person or your own estate. Get either of those things wrong and the asset can get pulled into probate just like any other piece of your estate.",
+  "sections": [
+    {
+      "h": "Why beneficiary designations are the whole ballgame",
+      "p": [
+        "Both life insurance policies and retirement accounts are what attorneys call non-probate assets. The contract itself dictates where the money goes, and it overrides your will entirely. I cannot stress that last part enough: your will does not control these accounts. If your 401(k) still lists your ex-spouse from 2009, that ex-spouse gets the money, full stop, even if your current will says otherwise. My wife works in probate real estate and I have watched families discover exactly this kind of surprise after a loved one dies. It is a painful and expensive lesson.",
+        "So the real question is never just whether these accounts avoid probate in theory. The real question is whether your specific designations are in good shape right now. That means logging into your retirement plan, pulling up your life insurance policy, and confirming that a living, named person is listed as both the primary and contingent beneficiary. Contingent just means backup: if your primary beneficiary dies before you do, the contingent beneficiary steps in. Without one, the money often defaults to your estate and heads straight into probate court."
+      ]
+    },
+    {
+      "h": "The common failures I see, especially in California",
+      "p": [
+        "The most common failure is simply never updating the form. People name a beneficiary when they open the account at 28 and then life happens: marriages, divorces, deaths, estrangements. The form stays frozen in time. California is a community property state, which adds another layer: a spouse may have legal rights to retirement assets even if they are not named on the form, and sorting that out after death can require court involvement regardless of what the designation says. If you have gone through a divorce in California, I would strongly encourage you to review every account and policy with an estate attorney, not just a checklist.",
+        "The second common failure is naming a minor child directly. A minor cannot legally receive a large sum of money, so a court will appoint a guardian of the estate to manage it until the child turns 18, which drags the process back into the legal system and costs money. A better approach, which an estate attorney can set up, is naming a trust or a custodian under the Uniform Transfers to Minors Act. The third failure is naming the estate itself as beneficiary, sometimes by accident. The moment the estate is the beneficiary, probate is required, the asset joins the pile, and your family waits months or longer to see a dime. In California, even modest estates can take a year or more to clear probate, and the statutory fees come out of the gross estate value, not the net."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/what-is-a-contingent-beneficiary",
+      "label": "What is a contingent beneficiary, and why does it matter?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
