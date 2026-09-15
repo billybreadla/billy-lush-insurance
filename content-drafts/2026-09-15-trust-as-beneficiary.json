@@ -1,0 +1,44 @@
+{
+  "slug": "trust-as-beneficiary",
+  "question": "Naming a trust as life insurance beneficiary: when it helps and when it hurts",
+  "dek": "Naming a trust as your life insurance beneficiary can protect minor children and vulnerable heirs, but it adds cost and complexity that not every family needs.",
+  "updated": "2026-09-15",
+  "answer": "Naming a trust as the beneficiary of your life insurance policy is smart in specific situations, including when minor children, a special-needs dependent, or a spendthrift heir would receive the money. Done correctly, it keeps the payout out of probate and puts a trustee in charge of managing the funds according to your exact instructions. Done incorrectly, or without coordinating with an estate-planning attorney, it can create delays, tax headaches, or land the money in probate anyway. Many families do not need this arrangement at all, and I will be straight with you about that.",
+  "sections": [
+    {
+      "h": "When naming a trust as beneficiary actually helps",
+      "p": [
+        "The clearest case is minor children. California law does not allow a life insurance company to hand a large check directly to a child under 18. If you name a minor as a direct beneficiary, the insurer will typically require a court-appointed guardian of the estate before releasing funds, which means probate court, legal fees, and delays that can stretch months or longer. If instead you name a properly funded trust, the trustee you chose can receive the money immediately and manage it according to the terms you set, whether that means monthly allowances, paying tuition, or holding funds until the child turns 25.",
+        "A trust is also worth considering if a beneficiary has a disability and receives government benefits like Medi-Cal or SSI. A sudden lump-sum payout can disqualify that person from needs-based programs. A special-needs trust, drafted by an attorney who knows California law, allows the money to supplement rather than replace those benefits. The same logic applies if you have a beneficiary who struggles with addiction, debt, or simply tends to burn through money quickly. A spendthrift provision inside a trust lets you slow the flow of funds without cutting that person out entirely."
+      ]
+    },
+    {
+      "h": "When it can hurt, or just is not necessary",
+      "p": [
+        "The main downsides are cost and complexity. Setting up a trust costs money upfront, and keeping it properly funded and maintained takes ongoing attention. If your beneficiaries are financially responsible adults and none of the situations above apply, naming them directly is simpler, faster, and usually just as effective at avoiding probate. Life insurance with a living, named adult beneficiary already bypasses probate in California without any trust involved at all.",
+        "I have also seen situations where someone named a trust as beneficiary but the trust was never actually signed and funded, or the trust document had language that conflicted with the policy. The insurer got confused, the family got delayed, and the money sat in limbo. That is why I always tell people: if you are going to do this, do it with an estate-planning attorney, not just a downloaded template. The trust has to exist, be valid under California law, and be named precisely on the beneficiary form. Getting one piece wrong can send the payout straight into the probate process you were trying to avoid, and my wife sees the aftermath of situations like that regularly through her probate real estate work."
+      ]
+    },
+    {
+      "h": "How to coordinate the policy and the trust",
+      "p": [
+        "Start with the attorney, not the insurance policy. The trust should be drafted first, or at minimum reviewed alongside your policy. Once the trust is signed and in place, you name it on the beneficiary form using the full legal name of the trust, the date it was established, and the trustee's name, something like: 'John Smith, Trustee of the Smith Family Trust, dated January 1, 2024.' An incomplete or informal description can cause the same delays you were trying to prevent.",
+        "After that, keep both documents current. If you amend the trust, check whether the beneficiary designation still matches. If you buy a new policy, do not forget to update the beneficiary form on that one too. Beneficiary forms control who gets the money, and they override whatever your will says. I am happy to walk through how your policy beneficiary form reads and flag anything that looks mismatched, then point you back to your attorney to fix the trust side if needed."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/beneficiary-mistakes-probate",
+      "label": "Beneficiary mistakes that accidentally send money through probate"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
