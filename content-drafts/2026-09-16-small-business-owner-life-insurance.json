@@ -1,0 +1,44 @@
+{
+  "slug": "small-business-owner-life-insurance",
+  "question": "Life insurance when you own the business: the basics that matter",
+  "dek": "If you own a business, life insurance does more than protect your family, it can keep the company alive, fund a buyout, and shield your personal assets from business debts.",
+  "updated": "2026-09-16",
+  "answer": "Business owners usually need at least two layers of life insurance thinking: one for the family and one for the business itself. Key person coverage protects the company if a critical owner or employee dies. A buy-sell agreement funded by life insurance keeps a partner's death from turning into a legal and financial disaster. And if you have signed personal guarantees on business loans, your family could be on the hook for those debts, which is something a policy can address before it ever becomes a probate nightmare.",
+  "sections": [
+    {
+      "h": "Key person insurance: what it is and who actually needs it",
+      "p": [
+        "Key person insurance is a policy the business owns on someone whose death would cause serious financial harm to the company. That could be you as the founder, a co-owner, a top salesperson, or a technical expert who is genuinely hard to replace. The business pays the premiums and is the beneficiary. If that person dies, the payout goes to the company, not the family, and gives the business cash to recruit a replacement, cover lost revenue, or wind down in an orderly way rather than in a panic. Not every business needs it. A solo freelancer with no employees and no debt probably does not. But if your business has partners, employees who depend on a paycheck, or a bank line of credit, key person coverage is worth a real look.",
+        "The amount you need depends on things like annual revenue, what it would cost to replace the person, and how much debt the business carries. There is no formula that works for everyone. I usually suggest thinking about it in terms of one to five years of what that person contributes, but your accountant and attorney should weigh in too."
+      ]
+    },
+    {
+      "h": "Buy-sell agreements: keeping a partner's death from becoming your problem",
+      "p": [
+        "A buy-sell agreement is a legal contract between business partners that spells out what happens to an ownership share if one partner dies, becomes disabled, or wants out. Life insurance is the most common way to fund it. Each partner owns a policy on the other, or the business owns policies on all partners. When one partner dies, the payout gives the surviving partners the cash to buy out the deceased partner's share at an agreed price, rather than suddenly being in business with that partner's spouse, adult children, or whoever inherits the estate.",
+        "Here in California, when someone dies, their assets often go through probate unless they were held in a trust or had a named beneficiary. A business ownership share with no buy-sell agreement in place can get tangled in probate for months or longer. My wife works in probate real estate, and I have heard enough stories about families feuding over business interests to know that a properly funded buy-sell agreement is one of the most practical things a business owner can do. The life insurance itself pays out directly to the surviving partners or the entity, bypassing probate entirely, because the policy has a named beneficiary."
+      ]
+    },
+    {
+      "h": "Personal guarantees: the debt your family does not know about",
+      "p": [
+        "When a small business takes out a loan, a line of credit, or a commercial lease, the lender almost always requires the owner to sign a personal guarantee. That means if the business cannot pay, you can. And if you die, that obligation does not vanish. Depending on how the debt is structured, your estate and sometimes your surviving spouse could be responsible for it. In California, community property rules can complicate this further if the guarantee was signed during the marriage.",
+        "This is an exposure that a lot of business owners have not thought through. A term policy sized to cover your outstanding personal guarantees is a straightforward way to make sure a business debt does not become the first thing your family deals with after losing you. It is not a complicated product, and it is usually one of the more affordable things I talk to business owners about. The key is actually sitting down and adding up what you have guaranteed, because most people underestimate the total."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/how-much-life-insurance-do-i-need",
+      "label": "How much life insurance do I actually need?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
