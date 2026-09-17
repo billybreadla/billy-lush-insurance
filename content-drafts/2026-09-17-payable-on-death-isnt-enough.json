@@ -1,0 +1,44 @@
+{
+  "slug": "payable-on-death-isnt-enough",
+  "question": "Why payable-on-death designations are not the whole answer",
+  "dek": "Payable-on-death designations skip probate in straightforward cases, but three common situations can unravel that plan and leave your family worse off than you expected.",
+  "updated": "2026-09-17",
+  "answer": "A payable-on-death (POD) designation is a useful tool, but it is not a complete estate plan. If your named beneficiary dies before you, if your beneficiary is a minor child, or if you never named a backup, the money can end up delayed, court-supervised, or tied to a guardian proceeding. Understanding where POD breaks down helps you build a plan that actually works when your family needs it.",
+  "sections": [
+    {
+      "h": "What a POD designation does well",
+      "p": [
+        "A POD designation, sometimes called a transfer-on-death or TOD designation depending on the account type, tells a bank or financial institution to hand the funds directly to the person you named, without going through the California probate court. That is a real benefit. Probate in California can take a year or more and can consume a meaningful slice of an estate in court fees and attorney costs. Bypassing it entirely for a bank account or a life insurance policy is genuinely valuable, and I always tell people to use these designations rather than leave accounts with no beneficiary at all.",
+        "My wife works in probate real estate, and she sees regularly what happens when a family has to wait on the court to release assets before they can even decide what to do with the house. A properly named POD beneficiary avoids that waiting. The problem is that people set up the designation once, feel like the job is done, and then life changes around it."
+      ]
+    },
+    {
+      "h": "Three situations where POD quietly fails",
+      "p": [
+        "The most common failure I see is when the named beneficiary has already died. Suppose you named your spouse as POD on your checking account fifteen years ago and never updated it after your spouse passed. When you die, the bank has nobody to pay. At that point the account often has to go through probate to be distributed, which is exactly what you were trying to avoid. California has a simplified small-estate process for assets under a certain threshold, but for anything larger the full probate process can apply, and the timeline is long.",
+        "The second problem is minor children. If you name a child who is under eighteen as a POD beneficiary and you die while they are still a minor, California law generally will not let the bank hand a large sum directly to a child. The court may appoint a guardian of the estate to manage the money, which involves legal fees, annual accountings to the court, and restrictions on how the money can be used until the child turns eighteen. At eighteen the child receives everything outright, with no conditions, which may not be what you had in mind. The third failure is simply never naming a contingent, or backup, beneficiary. If your primary beneficiary cannot or will not accept the funds, and there is no contingent named, the asset often reverts to your estate and goes through probate anyway. A single line on a form for a contingent beneficiary prevents this, and it costs nothing to add."
+      ]
+    },
+    {
+      "h": "How life insurance fits into a stronger plan",
+      "p": [
+        "Life insurance policies have the same beneficiary mechanics as POD bank accounts, which means they have the same vulnerabilities. But a well-structured life insurance policy, paired with a named contingent beneficiary and possibly a trust, can solve problems that a bare POD designation cannot. For example, if you have young children, naming a trust as the beneficiary of your policy rather than the children directly keeps the money out of a court-supervised guardianship and lets a trustee distribute funds according to your actual wishes over time.",
+        "I am not an estate-planning attorney and I always encourage people to work with one, especially in California where the probate threshold and community-property rules add complexity. What I can help with is making sure the life insurance piece of your plan is set up so the policy does not accidentally undo the work your attorney did on everything else. Getting the beneficiary designations right on a life insurance policy is one of those things that takes maybe thirty minutes to review and can save your family an enormous amount of grief later."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/what-is-a-contingent-beneficiary",
+      "label": "What is a contingent beneficiary, and why does it matter?"
+    },
+    {
+      "href": "/learn/beneficiary-mistakes-probate",
+      "label": "Beneficiary mistakes that accidentally send money through probate"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
