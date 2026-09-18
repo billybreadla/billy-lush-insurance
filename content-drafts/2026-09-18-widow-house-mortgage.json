@@ -1,0 +1,44 @@
+{
+  "slug": "widow-house-mortgage",
+  "question": "Widowed in California: the house, the mortgage, and replacing income",
+  "dek": "If your spouse just died and you own a home in California, here is what happens to the mortgage, the title, and your income, and where life insurance fits into the picture.",
+  "updated": "2026-09-18",
+  "answer": "When a spouse dies in California, the surviving partner usually keeps the house, but keeping the mortgage payments coming is a different problem entirely. A life insurance payout can replace the income your household just lost, giving you time to make decisions without a foreclosure clock running. Step-up in cost basis rules can also reduce capital-gains taxes if you eventually sell. Understanding these pieces together helps you figure out what coverage your family actually needs before a death happens.",
+  "sections": [
+    {
+      "h": "What happens to the house when a spouse dies in California",
+      "p": [
+        "California is a community property state, which means that in most marriages the home is already half yours. When your spouse dies, the title transfer is usually straightforward, often handled outside of probate entirely if the deed was set up correctly or if the home was held in a living trust. My wife works in probate real estate, and she will tell you that the homes causing the most heartbreak are the ones where paperwork was never updated. A deed stuck in probate can take six months to well over a year to clear in California, and mortgage servicers are not always patient.",
+        "There is also a genuinely valuable tax rule worth knowing: California follows the federal step-up in cost basis at death. If your spouse owned the home (or half of it), the taxable cost basis on that share steps up to the fair market value on the date of death. In a community property state, the IRS allows the entire property's basis to step up, not just the deceased spouse's half. That matters a lot in a place like the Conejo Valley where homes have appreciated dramatically. If you eventually sell, you may owe far less in capital-gains tax than you would have owed before your spouse died. Talk to a CPA or estate attorney about your specific situation, because basis rules have details that depend on how title was held."
+      ]
+    },
+    {
+      "h": "The mortgage does not stop, and refinancing is harder than people expect",
+      "p": [
+        "Here is the part that catches people off guard. The mortgage payment is due on the first of next month whether or not your spouse is still alive. Federal law (the Garn-St. Germain Act) generally protects a surviving spouse from an immediate due-on-sale clause, so the lender cannot demand you pay the whole loan off just because the borrower died. But you still have to make the monthly payment, and eventually, if you want to refinance, you have to qualify on your own income.",
+        "Refinancing on one income is often significantly harder than the original loan was on two. Lenders look at your debt-to-income ratio, and a single salary may not meet the threshold for the same loan terms you had before. This is the quiet financial crisis that life insurance is designed to prevent. A death benefit large enough to pay down or pay off the mortgage gives the surviving spouse real options: keep the house without financial strain, refinance from a position of strength, or sell on a timeline that makes sense rather than one forced by a missed payment."
+      ]
+    },
+    {
+      "h": "Replacing income is usually the biggest job term insurance does",
+      "p": [
+        "People sometimes think of life insurance as a burial fund. It can do that, but the main reason most working couples need coverage is income replacement. If your household runs on two salaries, or if one spouse earns most of the income, the financial hole left by a death is not just emotional. It is a gap in the monthly budget that hits immediately.",
+        "Term life insurance is built for exactly this situation. You pick a term, often ten to thirty years, that matches the years your family is most financially exposed, and you pay for coverage during that window. If nothing happens, the policy ends and you paid for peace of mind. If your spouse dies during that window, the payout lands directly with the named beneficiary, typically within weeks, and it does not go through probate. That speed matters. My wife has watched probate drag on for a year or more while families scraped together mortgage payments. A life insurance claim, when the beneficiary is named correctly, usually settles in two to eight weeks. That is the difference between a family keeping its home and one that cannot."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/how-much-life-insurance-do-i-need",
+      "label": "How much life insurance do I actually need?"
+    },
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
