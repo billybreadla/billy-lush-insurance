@@ -1,0 +1,44 @@
+{
+  "slug": "final-expense-vs-prepaid-funeral",
+  "question": "Final expense insurance vs. prepaying a funeral: the honest comparison",
+  "dek": "A plain-talk breakdown of final expense insurance versus prepaid funeral contracts, covering portability, refundability, and which option actually fits your situation.",
+  "updated": "2026-09-19",
+  "answer": "Both final expense insurance and prepaid funeral contracts can cover burial costs, but they work very differently. A prepaid contract locks money to a specific funeral home and specific services, while a final expense policy pays a named beneficiary cash they can use anywhere. Neither is automatically the right answer, and for many people the best move is a combination of the two or neither, depending on what they already have in place.",
+  "sections": [
+    {
+      "h": "What you are actually buying with each option",
+      "p": [
+        "A prepaid funeral contract, sometimes called a preneed contract, is an agreement you sign with a specific funeral home. You pay them now, either in a lump sum or installments, and they agree to provide certain services when you die. The appeal is obvious: you pick your own casket, lock in today's prices on some items, and spare your family from having to make gut-wrenching decisions while grieving. California requires preneed funds to be held in a trust or backed by an insurance policy sold through the funeral home, so there is some consumer protection built in. That said, the money is tied to that funeral home and that price list.",
+        "Final expense insurance is a small whole-life policy, usually somewhere in the range of five thousand to twenty-five thousand dollars in coverage, that you buy from a licensed insurance carrier. When you die, the death benefit goes directly to your named beneficiary as cash. They can use it to pay a funeral home, reimburse themselves for costs they already covered, pay off a small credit card balance you left behind, or cover any other immediate expense. The policy does not care which funeral home they choose or what city they are in."
+      ]
+    },
+    {
+      "h": "Portability and refundability: where each one can let you down",
+      "p": [
+        "Portability is the big hidden issue with prepaid contracts. If you sign a contract with a funeral home in Thousand Oaks and then move to Texas, or your family decides to handle your burial in another state, that contract may not transfer cleanly. Some funeral homes belong to national networks that allow transfers, but many do not, and even within a network the new location may not honor every item on your original price list. My wife deals with probate real estate and has seen families scramble when a parent's preneed contract was with a funeral home that had closed or changed ownership. It happens. A final expense policy goes where you go because the benefit follows the beneficiary, not a building.",
+        "Refundability is the other sticking point for prepaid contracts. Cancellation rules vary by state and by contract. In California, preneed contracts generally must offer some cancellation rights, but you may not get every dollar back, especially if you bought on installments or if a portion was already used for non-refundable items. Final expense whole-life policies build a small cash value over time, so if you ever decide to surrender the policy you typically get something back, though usually less than you paid in premiums in the early years. Neither option is perfectly liquid, but the insurance policy is generally more flexible over a long time horizon."
+      ]
+    },
+    {
+      "h": "Who each option actually fits",
+      "p": [
+        "A prepaid funeral contract makes the most sense if you are highly organized, you are confident you will stay in the same region, you have strong feelings about specific funeral arrangements, and you want to spare your family from making those choices entirely. It can also make sense for people who are on Medicaid or expect to be, because irrevocable preneed contracts are often exempt from Medicaid asset calculations in a way that a savings account or a life insurance policy with cash value may not be. That is a Medicaid planning detail worth checking with an elder-law attorney, not just an insurance agent.",
+        "Final expense insurance tends to fit people who want flexibility, who are not sure which family member will handle arrangements, or whose family is spread across different states or countries. It also fits people who already have a funeral home preference but want to give their family cash rather than a contract. One thing I tell people honestly: if you already have a term or whole-life policy large enough to cover burial costs and leave money for your family, you probably do not need a separate final expense policy at all. The goal is making sure your family has accessible money quickly, not collecting policies. Because life insurance pays a named beneficiary directly, it typically avoids probate entirely, which means the money can reach your family in days or weeks rather than the months or years a California probate can take. That speed matters when a funeral home wants payment within days of the service."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/what-is-final-expense-insurance",
+      "label": "What is final expense insurance, and is it worth it?"
+    },
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
