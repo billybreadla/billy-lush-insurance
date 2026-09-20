@@ -1,0 +1,51 @@
+{
+  "slug": "iul-for-estate-planning",
+  "question": "IUL for estate planning: who it actually fits",
+  "dek": "Indexed universal life insurance can be a smart estate-planning tool for the right person, but the caps, fees, and complexity mean it often loses to simpler strategies for everyone else.",
+  "updated": "2026-09-20",
+  "answer": "An IUL policy can make sense for high-income earners who have already maxed out other tax-advantaged accounts and want a death benefit that passes outside of probate along with tax-deferred cash growth. But for most families, the participation caps, internal costs, and long time horizon required mean a term policy plus a disciplined investment account will come out ahead. IUL is genuinely useful in a narrow slice of estate-planning situations, and overselling it is one of the things I dislike most about the life insurance industry. Here is an honest look at who it actually fits.",
+  "sections": [
+    {
+      "h": "What an IUL actually does (and what it does not do)",
+      "p": [
+        "An indexed universal life policy ties its cash-value growth to a market index, usually the S&P 500, rather than a fixed interest rate. The upside is that you get a floor, often 0 percent, so a bad market year does not wipe out your cash value the way it might in a straight investment account. The downside is a cap, commonly somewhere in the range of 8 to 12 percent depending on the policy and the current rate environment, so when the index returns 25 percent you only capture part of that gain. You are trading away upside in exchange for downside protection, and the insurance company is making money on that spread.",
+        "The death benefit is the part I actually care about from an estate-planning perspective. Like all life insurance, the payout goes directly to your named beneficiary and skips probate entirely. My wife works in probate real estate, and I have watched families wait six months to over a year for a house to clear probate while bills pile up. A life insurance death benefit, whether it comes from a term policy or an IUL, can land in a beneficiary's bank account in days or weeks. That probate-bypass feature is real and valuable regardless of the policy type."
+      ]
+    },
+    {
+      "h": "The cap-and-floor trade-off: when it helps and when it hurts",
+      "p": [
+        "The floor sounds great until you factor in internal policy costs. An IUL has cost of insurance charges, administrative fees, and sometimes surrender charges if you exit early. In the early years those charges can eat into your cash value significantly, so the 0 percent floor can effectively feel like a negative return after fees. The policy needs years, often a decade or more, to get past the cost drag and let the indexed crediting strategy do its job. If your situation changes and you need to surrender or lapse the policy early, you can end up worse off than if you had just bought a term policy and invested the difference.",
+        "Where the floor genuinely helps is for someone who is close to or in retirement, has a large estate they want to transfer efficiently, and cannot stomach the idea of a bad sequence of market returns wiping out the value right before they die. In that narrower scenario, the cap is an acceptable trade for the predictability. California's estate tax situation is worth noting here: California does not have its own state estate tax, but federal estate tax can apply to larger estates, and the death benefit of a properly structured IUL owned by an irrevocable life insurance trust can sometimes keep that payout out of the taxable estate entirely. That is a conversation that involves an estate attorney, not just me."
+      ]
+    },
+    {
+      "h": "When term plus investing beats an IUL",
+      "p": [
+        "For most people I talk to in the Conejo Valley, a straightforward term policy answers the core question, which is: if I die before my kids are grown or my mortgage is paid off, does my family survive financially? Term is cheap, transparent, and does exactly that job. If you also want to build wealth, putting the premium difference into a Roth IRA, a 401(k), or a taxable brokerage account usually produces better long-term results because those accounts do not carry the internal cost drag an IUL does.",
+        "The honest test I use is this: have you maxed out your 401(k), your IRA, and your HSA if you have one? If the answer is no, an IUL is probably not the right next step. It starts to make more sense for a business owner or a high-income professional who has genuinely run out of other tax-advantaged space, has a permanent insurance need (meaning the need for a death benefit does not go away at retirement), and can commit to keeping the policy funded properly for twenty or more years. It also fits someone who wants to leave a specific, guaranteed sum to heirs or a charity and wants certainty about the amount rather than hoping an investment portfolio hits a target number."
+      ]
+    },
+    {
+      "h": "What to watch out for before you buy",
+      "p": [
+        "The biggest red flag I see in IUL illustrations is that they are often run at the maximum assumed crediting rate, which is rarely what actually happens over a full policy life. Ask any agent showing you an IUL to also run the illustration at a mid-range rate and at a stress-scenario rate so you can see what happens if the index underperforms. A policy that looks beautiful at 8 percent crediting can lapse or require much higher premiums at 4 percent. That is not a scare tactic, it is just math.",
+        "Ownership structure also matters a lot for estate planning. If you own the policy yourself and it pays out to your estate rather than a named living beneficiary, it can end up in probate anyway. And in California, probate is slow and public. Getting the beneficiary designation right, and potentially working with an estate attorney on trust ownership for larger policies, is at least as important as picking the right policy type. I can help you think through the life insurance piece, but I always tell people to loop in an estate attorney for anything involving trusts or larger estates."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/what-is-indexed-universal-life-insurance",
+      "label": "What is indexed universal life (IUL) insurance?"
+    },
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
