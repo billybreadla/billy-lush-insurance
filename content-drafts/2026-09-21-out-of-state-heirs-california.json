@@ -1,0 +1,44 @@
+{
+  "slug": "out-of-state-heirs-california",
+  "question": "Your family lives in Texas but the house is in California: whose rules apply?",
+  "dek": "When your family lives in Texas but you own real estate in California, two states can have a say in your estate, and knowing which rules apply where can save your heirs months of confusion and thousands in legal costs.",
+  "updated": "2026-09-21",
+  "answer": "The short answer is: both states can apply, and often do. California law governs real property located inside California, no matter where the owner lived. Texas law governs the rest of the estate, including probate of personal property, for a person who was domiciled in Texas at death. That split jurisdiction is exactly why multi-state estates frequently end up in two separate probate proceedings at the same time.",
+  "sections": [
+    {
+      "h": "Real estate follows the land, not the person",
+      "p": [
+        "Here is the rule that trips up most families: wherever a piece of real property sits, that state's courts have jurisdiction over it. So if your primary home is in Katy, Texas, but you own a rental condo in Ventura County or a vacation place in the Santa Monica Mountains, California has the final say over how that California property passes to your heirs. Texas handles the rest of your estate. Your family could be running two probate cases simultaneously, one in a Texas county court and one in a California superior court, each with its own filing fees, its own timeline, and its own rules about what the executor can and cannot do.",
+        "California's probate threshold is low compared to what most people expect. If the gross value of California real property alone exceeds $184,500 (the figure adjusts periodically for inflation), a full California probate is typically required unless the property was held in a trust or had some other transfer mechanism in place. Texas has its own probate system that is generally considered more streamlined, but that does not help you with the California piece. The two proceedings run on parallel tracks, and your executor has to manage both."
+      ]
+    },
+    {
+      "h": "Why I got licensed in both California and Texas",
+      "p": [
+        "My wife works in probate real estate, and we see multi-state estate tangles more than you might think. A retired couple moves from the San Fernando Valley to outside Austin to be closer to grandkids, but they keep a rental property in Thousand Oaks because the rent income is good. When one of them dies, the surviving spouse is suddenly dealing with California superior court rules from Texas, usually while grieving, usually without a local California attorney already lined up.",
+        "That scenario is a big part of why I hold a California license (CA Lic. 4247326) and a Texas license (TX Lic. 3268220). I am not an attorney and I cannot give legal advice, but I can talk through how life insurance fits into both sides of that picture. A policy with a named beneficiary generally does not go through probate in either state, which means the death benefit can reach your family quickly even while the real estate is tied up in a California superior court case that might take a year or longer to close."
+      ]
+    },
+    {
+      "h": "What actually helps families in this situation",
+      "p": [
+        "The most reliable tools for keeping a California property out of probate are a living trust or a revocable transfer-on-death deed (California has allowed TOD deeds since 2016). If the property is titled inside a trust, the California probate court generally never has to touch it. An estate planning attorney licensed in California should set that up, not me, but I can tell you from watching my wife work through these files that a trust document and a properly titled deed make a profound difference for the family left behind.",
+        "On the life insurance side, the question I ask people in a multi-state situation is: does your family have liquid money available while the real estate is frozen in two probate courts? California probate can run 12 to 18 months or longer for contested or complicated estates. If the household income depends on rent from that California property, or if there is a mortgage on it, your family needs cash from somewhere during that window. A life insurance policy with a named beneficiary can often pay out in weeks, well before either probate case wraps up. That is not a sales pitch, it is just the math of how these timelines line up."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/does-life-insurance-go-through-probate",
+      "label": "Does life insurance go through probate?"
+    },
+    {
+      "href": "/learn/life-insurance-and-a-house-in-probate",
+      "label": "Life insurance and a house in probate: how the pieces fit"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
