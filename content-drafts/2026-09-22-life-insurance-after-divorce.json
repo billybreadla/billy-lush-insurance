@@ -1,0 +1,44 @@
+{
+  "slug": "life-insurance-after-divorce",
+  "question": "Life insurance after divorce: the designations people forget to change",
+  "dek": "Divorce changes everything except the name on your life insurance policy, and in California that gap can send money to the wrong person or into probate.",
+  "updated": "2026-09-22",
+  "answer": "After a divorce, your existing life insurance beneficiary designations do not update themselves. In California, a law called the Revocation-on-Divorce statute automatically strips an ex-spouse's rights to many assets, but life insurance policies governed by federal law, such as group policies through work or ERISA plans, are a major exception and can still pay out to your ex. The safest move is to update every beneficiary designation yourself, in writing, as soon as the divorce is final.",
+  "sections": [
+    {
+      "h": "What California law does and does not do for you",
+      "p": [
+        "California Probate Code Section 5600 says that a divorce or annulment automatically revokes a gift or beneficiary designation made to a former spouse in many contexts, including revocable trusts and some individually owned financial accounts. On the surface that sounds like a safety net, and for certain assets it is. But it is not a blanket rule that covers everything, and the exceptions matter enormously.",
+        "The biggest exception is employer-sponsored life insurance and retirement accounts governed by the federal ERISA law. Federal law preempts California state law here, and federal courts have repeatedly held that the named beneficiary on an ERISA plan gets the money, full stop, regardless of what a California divorce decree says. My wife handles probate real estate, and I have heard her describe cases where years after a divorce the ex-spouse collected the life insurance proceeds simply because no one updated the form. The employer's HR department was not being cruel. They were following the law."
+      ]
+    },
+    {
+      "h": "The designations people most often forget to change",
+      "p": [
+        "People remember to update their will after a divorce. What they forget are the beneficiary forms that operate completely outside the will. These include the group life insurance through your job, any individual term or permanent policies you own, retirement accounts like a 401k or IRA, payable-on-death bank accounts, and transfer-on-death brokerage accounts. Each of those has its own form, and each one needs to be updated separately. Forgetting even one can send a significant sum to someone you divorced years ago, and in some cases it can push money into probate if the named beneficiary is deceased and there is no contingent beneficiary listed.",
+        "One thing I tell people is to treat this like a checklist rather than a single task. After a divorce, pull every policy document and account statement you can find, write down who is currently named as beneficiary, and then go through and change each one. If you are not sure whether a policy is an ERISA plan or an individually owned contract, ask your HR department or the insurance company directly. The distinction matters legally."
+      ]
+    },
+    {
+      "h": "Naming a new beneficiary carefully, especially if kids are involved",
+      "p": [
+        "Once you decide to remove your ex-spouse, you need to decide who gets named instead. A common choice is a parent, a sibling, or an adult child. If your children are minors, you generally cannot name them directly as beneficiaries without some additional planning, because insurance companies will not hand a large check to a twelve-year-old. The money often ends up sitting in a court-supervised guardianship account until the child turns eighteen, which is a slow and expensive process. A trust set up for the children's benefit, or naming a trusted adult who has agreed to care for them, is usually cleaner.",
+        "It is also worth naming a contingent beneficiary, meaning a backup person who receives the money if your primary beneficiary dies before you do or at the same time. A policy with no living beneficiary at the time of a claim can end up going through your estate, which means probate court, delays, and costs. That is the outcome life insurance is specifically designed to avoid, and a simple contingent designation is all it takes to prevent it."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "href": "/learn/who-should-i-name-as-beneficiary",
+      "label": "Who should I name as my life insurance beneficiary?"
+    },
+    {
+      "href": "/learn/beneficiary-mistakes-probate",
+      "label": "Beneficiary mistakes that accidentally send money through probate"
+    },
+    {
+      "href": "/",
+      "label": "About Billy Lush: local life insurance"
+    }
+  ]
+}
