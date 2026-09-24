@@ -11,6 +11,7 @@ import {
   FAQS,
   SHARE_IMAGE,
 } from "../../lib/site";
+import { ARTICLE_BY_SLUG } from "../../lib/articles";
 import { insuranceAgency, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
 export function generateStaticParams() {
@@ -25,7 +26,7 @@ export async function generateMetadata({
   const { town } = await params;
   const t = TOWN_BY_SLUG[town];
   if (!t) return {};
-  const title = `Life Insurance in ${t.name}, CA | Billy Lush`;
+  const title = `Life Insurance Agent in ${t.name}, CA | Billy Lush`;
   const description = t.meta;
   const url = `${SITE_URL}/life-insurance/${t.slug}`;
   return {
@@ -101,7 +102,8 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
   const t = TOWN_BY_SLUG[town];
   if (!t) notFound();
 
-  const nearby = TOWNS.filter((x) => x.slug !== t.slug).slice(0, 5);
+  const nearby = TOWNS.filter((x) => x.slug !== t.slug);
+  const reading = t.learn.map((slug) => ARTICLE_BY_SLUG[slug]).filter(Boolean);
 
   return (
     <>
@@ -144,10 +146,36 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
           <span>Term · Whole Life · Final Expense · IUL · plain talk, no pressure</span>
         </div>
 
-        <section className="products">
+        <section className="faq">
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">No. 01</span>
+              <h2>Life insurance and probate in {t.name}</h2>
+            </div>
+            <div className="loc-local">
+              {t.local.map((p) => (
+                <p className="loc-intro" key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+            {reading.length > 0 && (
+              <div className="related">
+                <p className="label">Questions {t.name} families ask</p>
+                <ul>
+                  {reading.map((a) => (
+                    <li key={a.slug}>
+                      <a href={`/learn/${a.slug}`}>{a.question}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+
+        <section className="products">
+          <div className="wrap">
+            <div className="sec-head">
+              <span className="sec-no">No. 02</span>
               <h2>What I can set up for {t.name} families</h2>
             </div>
             <div className="prod-grid">
@@ -172,7 +200,7 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
         <section className="faq">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">No. 02</span>
+              <span className="sec-no">No. 03</span>
               <h2>Straight answers to the awkward questions</h2>
             </div>
             <div className="faq-list">
@@ -193,7 +221,7 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
         <section className="local">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">No. 03</span>
+              <span className="sec-no">No. 04</span>
               <h2>Also serving the rest of the valley</h2>
             </div>
             <div className="towns">

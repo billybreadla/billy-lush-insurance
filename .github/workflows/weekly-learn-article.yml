@@ -9,11 +9,12 @@ name: Learn article draft
 
 on:
   schedule:
-    # First Tuesday of the month: day of month 1 to 7 that falls on Tuesday
-    # (weekday 2). 16:00 UTC = 9:00 AM Pacific (PDT), 8:00 AM in winter (PST).
-    - cron: "0 16 1-7 * 2"
-    # Third Tuesday of the month: day of month 15 to 21 that falls on Tuesday.
-    - cron: "0 16 15-21 * 2"
+    # Every Monday, so Tuesday's auto-promote has a fresh (local-first) draft.
+    # 16:00 UTC = 9:00 AM Pacific (PDT), 8:00 AM in winter (PST).
+    # NOTE: never combine a day-of-month range with a weekday in one cron line.
+    # Cron ORs them: the old "0 16 1-7 * 2" fired every day of the 1st week
+    # plus every Tuesday, drafting ~16 articles a month.
+    - cron: "0 16 * * 1"
   workflow_dispatch: {}
 
 permissions:

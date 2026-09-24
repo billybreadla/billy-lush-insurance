@@ -21,7 +21,69 @@ const MODEL = "claude-sonnet-4-6";
 // Backlog of questions, in priority order. Every topic must intersect life
 // insurance with death, probate, inheritance, or executorship. Each entry has
 // a fixed slug so dedupe against published articles and saved drafts is exact.
+//
+// LOCAL topics come first and carry `local: true` + a `town` slug. National
+// questions ("is life insurance taxable") rank on page 8+ against the big
+// sites; Conejo Valley and Ventura County questions are winnable, and each
+// local article links to its town page. promote-article.mjs publishes local
+// drafts ahead of the older national queue.
 const BACKLOG = [
+  {
+    slug: "how-long-does-probate-take-ventura-county",
+    question: "How long does probate take in Ventura County?",
+    angle: "California probate commonly runs about 9 to 18 months; Ventura County estates go through the Ventura County Superior Court; what the family pays for in the meantime and how a life insurance payout bridges that gap. Do not invent court statistics or filing fees.",
+    local: true,
+    town: "thousand-oaks",
+  },
+  {
+    slug: "choosing-a-life-insurance-agent-conejo-valley",
+    question: "How to choose a life insurance agent in the Conejo Valley",
+    angle: "Verify a license on the California Department of Insurance site, independent vs captive agents, red flags like pressure and one-product pitches, why local and reachable matters when a claim happens",
+    local: true,
+    town: "newbury-park",
+  },
+  {
+    slug: "final-expense-for-a-parent-camarillo",
+    question: "Final expense insurance for a parent in Camarillo: what to know before you buy",
+    angle: "Adult kids shopping for an aging parent, simplified vs guaranteed issue, waiting periods, when setting money aside or a prepaid plan fits better. No invented funeral prices.",
+    local: true,
+    town: "camarillo",
+  },
+  {
+    slug: "inherited-house-thousand-oaks-probate",
+    question: "Inheriting a house in Thousand Oaks through probate: where life insurance fits",
+    angle: "Carrying costs while the estate is open (mortgage, property tax, insurance, upkeep), how a payout keeps heirs from a forced sale, planning ahead so the next generation avoids it",
+    local: true,
+    town: "thousand-oaks",
+  },
+  {
+    slug: "term-life-young-families-moorpark-simi-valley",
+    question: "Term life for young families in Moorpark and Simi Valley: how much is enough?",
+    angle: "Income replacement plus mortgage payoff, term length matched to the kids and the loan, why work coverage alone usually falls short. Use ranges, not quotes.",
+    local: true,
+    town: "moorpark",
+  },
+  {
+    slug: "county-line-probate-westlake-agoura",
+    question: "Westlake Village and Agoura Hills: why the county line matters for probate",
+    angle: "Most of Westlake Village and all of Agoura Hills are in Los Angeles County, so probate runs through the Los Angeles County Superior Court rather than Ventura County; same California Probate Code, different courthouse. Do not claim one court is faster.",
+    local: true,
+    town: "westlake-village",
+  },
+  {
+    slug: "conejo-valley-home-value-life-insurance",
+    question: "Your Conejo Valley home is worth more than you think: why that changes the life insurance math",
+    angle: "Long-held homes that appreciated, why that raises the odds of probate and the cost of keeping the house, sizing coverage to carry the estate. No invented home values or statistics.",
+    local: true,
+    town: "newbury-park",
+  },
+  {
+    slug: "moving-california-to-texas-life-insurance",
+    question: "Moving from California to Texas: what happens to your life insurance?",
+    angle: "Policies usually move with you, updating address and beneficiaries, community property differences to raise with an attorney, why Billy is licensed in both states",
+    local: true,
+    town: "newbury-park",
+  },
   {
     slug: "what-executors-should-know-about-life-insurance",
     question: "What executors should know about the deceased's life insurance",
@@ -144,6 +206,7 @@ if (!pick) {
 console.log("Writing draft:", pick.slug);
 
 const today = new Date().toISOString().slice(0, 10);
+const townName = pick.town ? pick.town.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ") : "";
 
 // Strip em-dashes / en-dashes anywhere in the generated text (hard brand rule).
 const DASH_RE = new RegExp("\\s*[\u2014\u2013]\\s*", "g");
@@ -193,10 +256,14 @@ Output ONLY a JSON object (no markdown, no preamble) with exactly these keys:
 ${existing.map((e) => `- /learn/${e.slug}  (${e.question})`).join("\n")}`
     : `For "related", only include {"href": "/", "label": "About Billy Lush: local life insurance"}.`;
 
+  const localNote = pick.local
+    ? `\nThis is a LOCAL article for readers in ${townName} and the surrounding Conejo Valley and Ventura County area. Name the area naturally a few times (not stuffed). Keep every local fact general and true; if unsure of a local detail, leave it out.\n`
+    : "";
+
   const userPrompt = `Write the article answering this question (it becomes the H1): "${pick.question}"
 
 Angle to cover: ${pick.angle}
-
+${localNote}
 ${relatedList}
 
 Return ONLY the JSON object.`;
@@ -233,6 +300,16 @@ const article = {
     ? body.related
     : [{ href: "/", label: "About Billy Lush: local life insurance" }],
 };
+
+// Local articles always link to their town page (added here rather than
+// trusted to the model) and are flagged so they publish ahead of the queue.
+if (pick.local && pick.town) {
+  const townHref = `/life-insurance/${pick.town}`;
+  if (!article.related.some((r) => r.href === townHref)) {
+    article.related.unshift({ href: townHref, label: `Life insurance in ${townName}, CA` });
+  }
+  article.local = true;
+}
 
 // Same validation the site expects, applied to the draft before it is written.
 if (!article.dek || !article.answer || !article.sections.length) {

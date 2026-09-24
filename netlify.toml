@@ -2,6 +2,10 @@
 # (same setup as the billy-bread site, which deploys cleanly).
 [build]
   command = "next build --webpack"
+  # Skip the production build (and its credits) when a push only touches the
+  # draft queue or the GitHub automation. Drafts are not on the site; only the
+  # Tuesday promotion into app/lib/articles.ts needs a deploy.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)content-drafts' ':(exclude).github'"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

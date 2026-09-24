@@ -30,7 +30,16 @@ if (!files.length) {
   process.exit(0);
 }
 
-const draftPath = `${DRAFTS_DIR}/${files[0]}`;
+// Local drafts jump the queue (oldest local first); otherwise oldest overall.
+const isLocal = (f) => {
+  try {
+    return JSON.parse(readFileSync(`${DRAFTS_DIR}/${f}`, "utf8")).local === true;
+  } catch {
+    return false;
+  }
+};
+const chosen = files.find(isLocal) ?? files[0];
+const draftPath = `${DRAFTS_DIR}/${chosen}`;
 const article = JSON.parse(readFileSync(draftPath, "utf8"));
 
 const articlesSrc = readFileSync(ARTICLES_PATH, "utf8");

@@ -553,3 +553,8 @@ footer .wrap { padding: 56px 24px 40px; }
   }
 }
 
+
+/* town pages: local section + article links */
+.faq .related { max-width: 780px; }
+.loc-towns { margin-top: 14px; line-height: 1.9; }
+.loc-towns a { text-decoration-color: var(--gold); }

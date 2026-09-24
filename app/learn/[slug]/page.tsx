@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AcornMark, SiteHeader, SiteFooter } from "../../components/Chrome";
-import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY, SHARE_IMAGE } from "../../lib/site";
+import { SITE_URL, FACTS, IMDB_URL, WIKIPEDIA_URL, BAKERY, SHARE_IMAGE, TOWNS } from "../../lib/site";
 import { ARTICLES, ARTICLE_BY_SLUG } from "../../lib/articles";
 import { billyBreadOrganization, SCHEMA_IDS, serializeJsonLd } from "../../lib/schema";
 
@@ -176,6 +176,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Every article points at the town pages, so local pages get
+                links from the content Google already crawls most. */}
+            <div className="related">
+              <p className="label">A local agent for</p>
+              <p className="loc-towns">
+                {TOWNS.map((t, i) => (
+                  <span key={t.slug}>
+                    {i > 0 && " · "}
+                    <a href={`/life-insurance/${t.slug}`}>{t.name}</a>
+                  </span>
+                ))}
+                {" · "}
+                <a href="/texas-life-insurance">Texas</a>
+              </p>
             </div>
           </div>
         </article>
