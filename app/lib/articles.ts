@@ -587,6 +587,43 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "how-long-does-probate-take-ventura-county",
+    question: "How long does probate take in Ventura County?",
+    dek: "California probate commonly runs 9 to 18 months, and Ventura County estates are no exception. Here is what that timeline means for your family's finances and how life insurance can fill the gap.",
+    updated: "2026-09-29",
+    answer:
+      "Probate in Ventura County typically takes somewhere between 9 and 18 months, sometimes longer for larger or disputed estates. All Ventura County probate matters go through the Ventura County Superior Court, and the process follows the same California Probate Code as every other county in the state. During that waiting period, your family still has a mortgage, utility bills, and everyday expenses to cover, but the assets stuck in probate are off-limits until the court releases them. A life insurance policy with a named beneficiary pays outside of probate, usually within weeks, and can bridge exactly that gap.",
+    sections: [
+      {
+        h: "Why probate in California takes as long as it does",
+        p: [
+          "California has one of the more involved probate processes in the country. After someone passes, the executor or administrator has to petition the court to open the estate, notify creditors, publish a legal notice, inventory all assets, and then wait for the court to approve the final accounting before anything gets distributed. Each of those steps has its own waiting period built in by California law, and court scheduling adds more time on top of that. Nine to 18 months is a common range I hear from my wife, who works in probate real estate here in the Conejo Valley, but she has seen straightforward cases wrap up closer to a year and complicated ones stretch well past that.",
+          "Ventura County estates go through the probate division of the Ventura County Superior Court. Whether you are in Thousand Oaks, Camarillo, Simi Valley, or anywhere else in the county, the process is the same. The court is generally professional and the staff helpful, but they are running a full docket, and there is no shortcut for the mandatory notice and waiting periods written into California law. If the estate is large enough to require a formal probate (California currently sets a threshold for when simplified procedures apply), you are looking at a multi-step court process that simply takes time.",
+        ],
+      },
+      {
+        h: "What your family pays for while they wait",
+        p: [
+          "This is the part that catches families off guard. The house does not stop needing a mortgage payment just because the owner died and the estate is in probate. HOA dues, property taxes, homeowners insurance, utilities, and basic maintenance all continue. If the surviving family members do not have liquid cash of their own to cover those costs, they can find themselves in a genuinely difficult spot, because the money sitting in the estate is legally frozen until the court says otherwise. My wife has worked with families in Thousand Oaks and the surrounding Conejo Valley who had to make hard decisions about a home precisely because liquidity dried up during probate.",
+          "Attorney fees and executor fees are another real cost. California sets those fees by statute as a percentage of the gross estate value, so on a home with a high appraised value, those fees can add up even if the estate also carries debt against the property. None of this is meant to scare you. It is just the honest picture of what the probate timeline actually costs a family in practical, day-to-day terms.",
+        ],
+      },
+      {
+        h: "How a life insurance payout bridges the gap",
+        p: [
+          "A life insurance policy with a properly named beneficiary does not go through probate at all. When the policyholder dies, the named beneficiary files a claim directly with the insurance company. Most straightforward claims pay out within a few weeks, not months. That money is available immediately for mortgage payments, final expenses, or whatever the family needs while the estate is working its way through the Ventura County Superior Court.",
+          "I talk to a lot of people in Newbury Park and around the Conejo Valley who assume their family will be fine because they own a home and have assets. Those assets are real, but they may be locked up for a year or more. Life insurance is liquid on a timeline that probate simply cannot match. You do not need a complicated policy for this to work. Even a straightforward term policy with the right beneficiary designation can give your family breathing room while everything else gets sorted out. And if you are not sure whether you actually need coverage, I will tell you that honestly too. That is a conversation worth having before a crisis, not during one.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/life-insurance/thousand-oaks", label: "Life insurance in Thousand Oaks, CA" },
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/claim-timeline-vs-probate-timeline", label: "How long does a life insurance claim take compared to probate in California?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
