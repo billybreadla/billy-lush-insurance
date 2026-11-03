@@ -785,6 +785,43 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "county-line-probate-westlake-agoura",
+    question: "Westlake Village and Agoura Hills: why the county line matters for probate",
+    dek: "Most of Westlake Village and all of Agoura Hills sit in Los Angeles County, which means probate runs through the LA County Superior Court, not Ventura County, even though both cities feel like part of the same Conejo Valley community.",
+    updated: "2026-11-03",
+    answer:
+      "If you own property or assets in Westlake Village or Agoura Hills and you pass away without a plan to avoid probate, your estate will almost certainly go through the Los Angeles County Superior Court, not the Ventura County courthouse in Oxnard. The California Probate Code is the same statewide, but the courthouse, the filing location, and the local procedures follow county lines, not community lines. A named beneficiary on a life insurance policy bypasses that court process entirely, in either county. Understanding which county your assets fall under is a small detail that can save your family real time and hassle.",
+    sections: [
+      {
+        h: "The county line runs right through the Conejo Valley",
+        p: [
+          "I live and work in Newbury Park, which is part of Thousand Oaks in Ventura County. My neighbors to the southeast in Westlake Village and Agoura Hills are, for most practical legal purposes, in Los Angeles County. The two cities feel like one continuous community with the same zip codes, the same schools, and the same traffic on the 101, but the county boundary does not care about any of that. Most of Westlake Village and all of Agoura Hills fall on the LA County side of that line, so when a resident there dies with assets that have to go through probate, the case is filed with the Los Angeles County Superior Court.",
+          "This surprises people. Families in Westlake Village sometimes assume they will deal with the Ventura County courts in Oxnard, the way their friends in Thousand Oaks or Camarillo would. They are wrong, and finding that out after someone has already passed is not a fun moment. My wife works in probate real estate and has seen families lose time simply because they did not know which court to approach or what that court's local requirements were. Knowing your county in advance is a simple, free piece of information that genuinely matters.",
+        ],
+      },
+      {
+        h: "Same California Probate Code, different courthouse and process",
+        p: [
+          "California has one Probate Code that applies everywhere in the state. The basic rules, the thresholds, the creditor notice periods, all of that is set at the state level. But each county's superior court runs its own calendar, its own local rules, and its own filing procedures. Los Angeles County is one of the largest probate dockets in the country. Ventura County is smaller. Neither is guaranteed to be faster or slower than the other at any given time, and I am not going to tell you one is better, because that changes and it depends on the complexity of the estate. What I will say is that the practical experience of going through probate in LA County versus Ventura County can feel different, and your family will want an estate attorney who is familiar with whichever courthouse actually has jurisdiction.",
+          "The cleaner solution, and the one I talk about most in my work as a life insurance agent in the Conejo Valley, is to keep assets out of probate altogether where you can. A life insurance policy with a living, named beneficiary does not go through any courthouse. The claim goes directly to the insurance company and, once approved, the money goes directly to your beneficiary. That is true whether your policy was written in Westlake Village, Agoura Hills, Newbury Park, or anywhere else in California.",
+        ],
+      },
+      {
+        h: "What this means practically for Westlake Village and Agoura Hills families",
+        p: [
+          "If you own a home or hold accounts in Westlake Village or Agoura Hills and you are thinking about your estate plan, the first step is simply confirming which county your property is recorded in. For most Westlake Village addresses and all of Agoura Hills, that is Los Angeles County. Your estate planning attorney and any probate work will flow from there.",
+          "Life insurance fits into this picture as a tool your family can use while the estate is being sorted out in court. Probate can take months, and in complex estates it can stretch longer. A life insurance payout, by contrast, often arrives in weeks once a claim is filed. My wife has watched families cover mortgage payments, property taxes, and basic living expenses with life insurance proceeds while they waited for the court to release other assets. That liquidity matters, and it matters whether your estate ends up in Los Angeles County or Ventura County. If you have questions about how a policy fits into your specific situation, I am happy to talk. There is no pressure and no obligation.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/life-insurance/westlake-village", label: "Life insurance in Westlake Village, CA" },
+      { href: "/learn/does-life-insurance-go-through-probate", label: "Does life insurance go through probate?" },
+      { href: "/learn/inherited-house-thousand-oaks-probate", label: "Inheriting a house in Thousand Oaks through probate: where life insurance fits" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
