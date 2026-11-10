@@ -822,6 +822,43 @@ export const ARTICLES: Article[] = [
       { href: "/", label: "About Billy Lush: local life insurance" },
     ],
   },
+  {
+    slug: "conejo-valley-home-value-life-insurance",
+    question: "Your Conejo Valley home is worth more than you think: why that changes the life insurance math",
+    dek: "Conejo Valley homes that have appreciated over the years often push estates into probate and leave heirs scrambling for cash at the worst possible time. Here is why that changes how much life insurance you actually need.",
+    updated: "2026-11-10",
+    answer:
+      "If you have owned your Conejo Valley home for a long time, it is very likely worth far more today than you paid for it, and that appreciation quietly raises the stakes for your family after you die. A high-value home sitting in an estate can trigger California probate, freeze the asset for months or longer, and leave your heirs needing cash they may not have. Life insurance is one of the most practical tools for covering those costs and giving your family options. Getting the coverage amount right, though, requires thinking about your home's current value, not what you paid decades ago.",
+    sections: [
+      {
+        h: "Why appreciated homes and probate go together in California",
+        p: [
+          "California has a probate threshold. When a deceased person's assets that pass outside of a trust or other probate-avoidance structure exceed that threshold, the estate generally has to go through the Superior Court probate process. In Ventura County, that means the Ventura County Superior Court, and the timeline can stretch well beyond a year. My wife works in probate real estate, and she will tell you that the families who are most caught off guard are almost never the ones with obvious wealth. They are the ones where mom and dad bought a modest home in Newbury Park or Thousand Oaks forty years ago and simply stayed. The home appreciated, the family never updated the estate plan, and now a house that feels like home is legally an estate asset worth enough to send everything into probate.",
+          "California probate fees are set by statute and are calculated as a percentage of the gross value of the estate, not the net. That means a home with a large mortgage still contributes its full fair-market value to the fee calculation. Probate attorney fees, executor fees, court costs, and carrying costs like mortgage payments, property taxes, and insurance during the probate period can add up to a meaningful sum. If the heirs do not have liquid cash available, they may be forced to sell the home under time pressure, which is rarely the outcome anyone wanted.",
+        ],
+      },
+      {
+        h: "How home value reshapes the life insurance math",
+        p: [
+          "When I sit down with someone in the Conejo Valley to talk through coverage, the conversation about their home often surprises them. Many people sized their life insurance years ago based on income replacement, a mortgage payoff, or just a round number that felt right at the time. Those are all reasonable starting points, but they can miss a big piece of the picture if the home has appreciated significantly since the policy was bought. The question I ask is this: if you died tomorrow, could your family afford to hold onto this house through probate or trust administration, pay the professional fees involved, and still have breathing room? For a lot of families around here, the honest answer is no, not without help.",
+          "Life insurance that names a person directly as beneficiary, or that pays into a properly structured trust, usually passes outside of probate entirely and can be in your family's hands in weeks rather than months or years. That liquidity is what gives heirs choices. They can choose to keep the house and cover the carrying costs while the estate settles. They can choose to sell without being rushed. They can pay professional fees without draining savings accounts. The coverage amount that makes sense is not just about replacing your income. It is about matching the size and complexity of the estate you are going to leave behind.",
+        ],
+      },
+      {
+        h: "Sizing coverage when real estate is the main asset",
+        p: [
+          "There is no formula that works for everyone, but there are questions worth asking. What would it cost your family to carry the home for a year or more while an estate settles? What are the likely probate or trust-administration fees based on current market value? Do your heirs have liquid assets of their own, or is the home essentially all there is? If the home is the dominant asset and liquid savings are thin, that gap is exactly what life insurance is designed to fill.",
+          "One thing I want to be honest about: life insurance is not the only tool, and it is not always the right answer for every situation. A well-drafted revocable living trust can help a California home avoid probate altogether, which changes the math significantly. A good estate attorney is the right person to set that up. But even families with trusts sometimes benefit from life insurance because trusts do not pay property taxes during administration, do not cover deferred maintenance on a home, and do not replace income that stops the day you die. The two tools work well together. If you are not sure what your situation looks like, that is exactly the kind of thing worth talking through with someone who knows both sides of it, and I am always happy to be a starting point for that conversation.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/life-insurance/newbury-park", label: "Life insurance in Newbury Park, CA" },
+      { href: "/learn/life-insurance-and-a-house-in-probate", label: "Life insurance and a house in probate: how the pieces fit" },
+      { href: "/learn/how-long-does-probate-take-ventura-county", label: "How long does probate take in Ventura County?" },
+      { href: "/", label: "About Billy Lush: local life insurance" },
+    ],
+  },
 ];
 
 export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
